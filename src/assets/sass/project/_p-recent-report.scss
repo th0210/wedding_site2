@@ -1,0 +1,53 @@
+@use "../global" as global;
+
+.p-recent-report {
+    margin-top: 72px;
+
+    @include global.mq(sp) {
+        margin-top: 32px;
+    }
+}
+
+.p-recent-report__cards {
+    position: relative;
+}
+
+.p-recent-report__cards__wrapper {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 24px;
+    overflow-x: scroll;
+    position: relative;
+     /* IE, Edge 対応 */
+    -ms-overflow-style: none;
+    /* Firefox 対応 */
+    scrollbar-width: none;
+    /* Chrome, Safari 対応 */
+    &::-webkit-scrollbar {
+        display:none;
+    }
+}
+
+.p-recent-report__prev {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    z-index: global.$prev-next;
+
+    @include global.mq(sp) {
+        display: none;
+    }
+}
+
+.p-recent-report__next {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    z-index: global.$prev-next; 
+
+    @include global.mq(sp) {
+        display: none;
+    }
+}

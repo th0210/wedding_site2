@@ -1,0 +1,26 @@
+@use "../global" as global;
+
+.c-star-mark {
+    width: 26px;
+    height: 26px;
+    background: rgba(117, 118, 118, 0.66);
+    border-radius: 50%;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: global.$color4;
+    position: relative;
+
+    @include global.mq(sp) {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    &::before {
+        font-size: 0;
+        content: "★";
+        color: #F2C247;
+    }
+}

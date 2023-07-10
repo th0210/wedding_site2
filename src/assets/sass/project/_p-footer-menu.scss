@@ -1,0 +1,50 @@
+@use "../global" as global;
+
+.p-footer-menu {
+    padding-right: 64px;
+    margin-top: 24px;
+
+    @include global.mq(tb) {
+        padding-right: 0;
+        margin-top: 0;
+    }
+
+    @include global.mq(sp) {
+        padding-right: 0;
+        margin-top: 0;
+    }
+}
+
+.p-footer-menu__top__lists,
+.p-footer-menu__under__lists {
+    display: flex;
+    gap: 24px;
+
+    @include global.mq(tb) {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    @include global.mq(sp) {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.p-footer-menu__under__lists {
+    margin-top: 24px;
+}
+
+.p-footer-menu__top__link,
+.p-footer-menu__under__link {
+    font-size: 16px;
+    font-family: global.$ff-noto;
+    line-height: 24px;
+    font-weight: global.$fw-regular;
+    color: global.$color5;
+
+    @include global.mq(sp) {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

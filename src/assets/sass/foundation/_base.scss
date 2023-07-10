@@ -1,0 +1,20 @@
+@use "../global" as global;
+
+body {
+    font-size: 16px;
+    color: global.$main-color1;
+
+    &.no-scroll {
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+

@@ -1,0 +1,35 @@
+@use "../global" as global;  
+
+.c-label {
+    width: 75px;
+    height: 75px;
+    border-top: 75px solid global.$main-color2;
+    border-right: 75px solid transparent;
+    border-bottom: transparent;
+    position: relative;
+
+    @include global.mq(sp) {
+        width: 56px;
+        height: 56px;
+        border-top: 56px solid global.$main-color2;
+        border-right: 56px solid transparent;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: global.$fw-regular;
+        font-family: global.$ff-noto;
+        line-height: 21px;
+        color: global.$color4;
+        position: absolute;
+        top: -66px;
+        left: 8px;
+
+        @include global.mq(sp) {
+            font-size: 10px;
+            line-height: 15px;
+            top: -45px;
+            left: 7px;
+        }
+    }
+}

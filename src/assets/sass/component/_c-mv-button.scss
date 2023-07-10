@@ -1,0 +1,128 @@
+@use "../global" as global;
+
+.c-mv-button {
+    cursor: pointer;
+
+    @include global.mq(tb) {
+        width: 50%;
+    }
+
+    @include global.mq(sp) {
+        width: 50%;
+    }
+}
+
+.c-mv-button__link--gray {
+    @include global.mv-button(global.$main-color1);
+    position: relative;
+
+    @include global.mq(tb) {
+        width: 100%;
+        padding: 23px 90px 23px 30px;
+    }
+
+    @include global.mq(sp) {
+        width: 100%;
+        font-size: 14px;
+        padding: 15px 67px 15px 23px;
+    }
+
+    &::before {
+        @include global.mq(sp) {
+            width: calc(100% - 12px);
+            height: calc(100% - 12px);
+            border: 1px solid global.$color4;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    i {
+        position: absolute;
+        top: 50%;
+        right: 91px;
+        transform: translateY(-50%);
+        font-size: 23px;
+        color: global.$color4;
+
+        @include global.mq(sp) {
+            right: 29px;
+            font-size: 14px;
+        }
+    }
+}
+
+.c-mv-button__link--blue {
+    @include global.mv-button(global.$main-color2);
+    position: relative;
+
+    @include global.mq(tb) {
+        width: 100%;
+        padding: 23px 90px 23px 30px;
+    }
+
+    @include global.mq(sp) {
+        width: 100%;
+        font-size: 14px;
+        padding: 15px 67px 15px 23px;
+    }
+
+    &::before {
+        @include global.mq(sp) {
+            width: calc(100% - 12px);
+            height: calc(100% - 12px);
+            border: 1px solid global.$color4;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    i {
+        position: absolute;
+        top: 50%;
+        right: 91px;
+        transform: translateY(-50%); 
+        font-size: 23px;
+        color: global.$color4;
+
+        @include global.mq(sp) {
+            right: 29px;
+            font-size: 14px;
+        }
+    }
+} 
+
+.c-mv-button__link--accent {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: global.$ff-noto;
+    font-weight: global.$fw-bold;
+
+    @include global.mq(tb) {
+        font-size: 20px;
+        line-height: 30pxpx;
+    }
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+    }
+}
+
+.c-mv-button__link--middle {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: global.$fw-medium;
+    font-family: global.$ff-yu;
+
+    @include global.mq(sp) {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.005em;
+    }
+}

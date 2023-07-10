@@ -1,0 +1,7 @@
+@use "../global" as global;
+
+.u-tb-display-none {
+    @include global.mq(tb) {
+        display: none;
+    }
+}

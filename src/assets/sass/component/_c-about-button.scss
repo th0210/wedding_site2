@@ -1,0 +1,30 @@
+@use "../global" as global; 
+
+.c-about-button {
+    font-size: 20px;
+    color: global.$color4;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    line-height: 30px;
+    letter-spacing: 0.008em;
+    background: global.$main-color2;
+    display: inline-block;
+    padding: 16px 64px;
+    transition: 0.3s;
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 16px 32px;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        color: global.$main-color2;
+        background: global.$color4;
+        border: 1px solid global.$main-color2;
+    }
+}

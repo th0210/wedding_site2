@@ -1,0 +1,49 @@
+@use "../global" as global;
+
+.c-show-button--short {
+    font-size: 24px;
+    color: global.$color4;
+    line-height: 36px;
+    background: global.$main-color1;
+    font-family: global.$ff-noto;
+    font-weight: global.$fw-regular;
+    padding: 16px 103px 16px 24px;
+    display: inline-block;
+    transition: 0.3s;
+    position: relative;
+
+    @include global.mq(tb) {
+        font-size: 20px;
+        padding: 16px 90px 16px 20px;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        color: global.$main-color1;
+        background: global.$color4;
+        border: 1px solid global.$main-color1;
+    }
+
+    &::before {
+        content: "";
+        width: 27px;
+        border: 1px solid global.$color4;
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+    }
+
+    &::after {
+        content: "";
+        width: 12px;
+        border: 1px solid global.$color4;
+        position: absolute;
+        top: calc(50% - 2px);
+        right: 12px;
+        transform: rotate(30deg) translateY(-50%);
+    }
+}

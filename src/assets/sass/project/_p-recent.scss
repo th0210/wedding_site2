@@ -1,0 +1,14 @@
+@use "../global" as global;
+
+.p-recent {
+    background-color: global.$main-bg-color;
+    margin-top: 60px+65px;
+    padding: 73px 0 64px 0;
+    position: relative;
+
+    @include global.mq(sp) {
+        margin-top: 104px + 40px;
+        padding: 64px 0 21px 16px;
+    }
+
+}

@@ -1,0 +1,14 @@
+@use "../global" as global;
+
+.c-scroll--blue {
+    @include global.c-scroll(132, 214, 214, 0.6, 0.6);
+
+    @include global.mq(sp) {
+        width: 28px;
+        height: 28px;
+
+        i {
+            font-size: 10px;
+          }
+    }
+}

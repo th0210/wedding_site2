@@ -1,0 +1,9 @@
+@use "../global" as global;
+
+.u-sp-display {
+    display: none;
+
+    @include global.mq(sp) {
+        display: block;
+    }
+}

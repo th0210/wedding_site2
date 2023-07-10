@@ -1,0 +1,16 @@
+@use "../global" as global;
+
+.c-area {
+    width: 46px;
+    height: 23px;
+    font-size: 10px;
+    color: global.$main-color2;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    border: 1px solid global.$main-color2;
+    text-align: center;
+}

@@ -1,0 +1,153 @@
+@use "../global" as global;
+
+.p-plan-item1,
+.p-plan-item2,
+.p-plan-item3,
+.p-plan-item4,
+.p-plan-item5 {
+    @include global.mq(sp) {
+        margin-top: 39px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.p-plan-item1__link,
+.p-plan-item2__link,
+.p-plan-item3__link,
+.p-plan-item4__link,
+.p-plan-item5__link {
+    width: 342px;
+    height: 125px;
+    background: global.$color4;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include global.mq(sp) {
+        width: auto;
+        height: 106px;
+    } 
+
+    &:active {
+        background: rgba(0, 0, 0, 0.49);
+        z-index: 2;
+
+        .p-plan-item__icon {
+            z-index: -1;
+        }
+
+        .p-plan-item__title {
+            color: global.$color4;
+        }
+
+        .p-plan-item__img {
+            background: global.$color5;
+
+
+            img {
+                opacity: 0.49;
+            }
+        }
+
+        .c-plan-line {
+            border-bottom: 1px solid global.$color4;
+
+            &::after {
+                border-bottom: 1px solid global.$color4;
+            }
+        }
+    }
+}
+
+
+.p-plan-item__icon {
+    width: 41px;
+    height: 41px;
+    background: global.$tag-color1;
+    display: inline-block;
+    position: absolute;
+    top: -16px;
+    left: -13px;
+    z-index: 2;
+
+    @include global.mq(sp) {
+        width: 35px;
+        height: 35px;
+        top: -13px;
+        left: -11px;
+    } 
+
+    &.item2 {
+        background-color: global.$tag-color4;
+    }
+
+    &.item3 {
+        background-color: global.$tag-color2;
+    }
+
+    &.item4 {
+        background-color: global.$tag-color5;
+    }
+
+    &.item5 {
+        background-color: global.$tag-color3;
+    }
+}
+
+.p-plan-item__content {
+    text-align: center;
+    width: calc(100% - 125px);
+    padding: 0 20px;
+}
+
+.p-plan-item__img {
+    width: 125px;
+
+    @include global.mq(sp) {
+        width: 106px;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.p-plan-item__title {
+    font-size: 20px;
+    color: global.$main-color1;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    line-height: 27px;
+    margin-left: 6px;
+
+    @include global.mq(sp) {
+        font-size: 16px;
+    } 
+}
+
+.p-plan-item__border {
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    border: 1px solid global.$color4;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    z-index: 3;
+
+    @include global.mq(sp) {
+        width: calc(100% - 16px);
+        height: calc(100% - 16px);
+        top: 8px;
+        left: 8px;
+    }
+}
+
+.p-plan-item__line {
+    position: absolute;
+    right: 16px;
+    bottom: 9px;
+}

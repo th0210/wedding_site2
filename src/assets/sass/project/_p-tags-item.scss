@@ -1,0 +1,121 @@
+@use "../global" as global;
+
+.p-tags-item {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 0 5% 0 10%;
+
+    @include global.mq(tb) {
+        padding: 0 15% 5% 15%;
+    }
+
+    @include global.mq(sp) {
+        padding: 0 0 48px 0; 
+    }
+
+    &:nth-child(2) {
+        padding: 0 5%;
+
+        @include global.mq(tb) {
+            padding: 0 15% 5% 15%;
+            margin-top: 48px;
+        }
+
+        @include global.mq(sp) {
+            padding: 0 0 48px 0;
+            margin-top: 48px;
+        }
+    }
+
+    &:last-child {
+        padding: 0 10% 0 5%;
+
+        @include global.mq(tb) {
+            padding: 0 15% 5% 15%;
+            margin-top: 48px;
+        }
+
+        @include global.mq(sp) {
+            margin-top: 48px;
+        }
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &::before {
+        content: "";
+        height: 80%;
+        border-left: 1px solid global.$main-color1;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+        @include global.mq(tb) {
+            width: 300px;
+            border-left: none;
+            border-bottom: 1px solid global.$main-color1;
+            top: auto;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+
+        @include global.mq(sp) {
+            width: 229px;
+            border-left: none;
+            border-bottom: 1px solid global.$main-color1;
+            top: auto;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.p-tags-item__head {
+    font-size: 20px;
+    color: global.$color5;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-regular;
+    line-height: 30px;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 30px;
+        border: 1px solid global.$main-color2;
+        position: absolute;
+        top: 15px;
+        left: -64px;
+        transform: rotate(-120deg);
+    }
+
+    &::after {
+        content: "";
+        width: 30px;
+        border: 1px solid global.$main-color2;
+        position: absolute;
+        top: 15px;
+        right: -64px;
+        transform: rotate(120deg);
+    }
+}
+
+.p-tags-item__tags {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4px;
+    row-gap: 6px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+    @include global.mq(sp) {
+        padding: 0 45px;
+    }
+}

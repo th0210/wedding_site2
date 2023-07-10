@@ -1,0 +1,1557 @@
+doctype html 
+html(lang="ja")
+    head 
+        meta(charset="utf-8")
+        title ブライダルプランナー 
+        meta(name="description" content="")
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet")
+        link(rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
+        link(rel="stylesheet" href="./assets/css/style.css")
+
+        script(src="https://kit.fontawesome.com/230697b7eb.js" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js")
+
+    body 
+        header.l-header 
+            h1.l-header__logo: img(src="./assets/img/logo.png" alt="")
+
+        .p-sp-menu
+            .p-mv-menu-icon 
+                span.p-mv-menu-icon__bar1
+                span.p-mv-menu-icon__bar2
+                span.p-mv-menu-icon__bar3
+                
+        .p-mv
+            .p-mv-content
+                p.p-mv-content__head You can meet<br>the best wedding planner.
+                p.p-mv-content__title <span class="p-mv-content__title--top">と作るか</span><br>から<br><span class="p-mv-content__title--bottom">始める</span>
+                h1.p-mv-content__logo: img(src="./assets/img/logo.png")
+            
+            .p-mv-menu
+                ul.p-mv-menu__lists 
+                    li.p-mv-menu__list
+                        .p-mv-menu-icon 
+                            span.p-mv-menu-icon__bar1
+                            span.p-mv-menu-icon__bar2
+                            span.p-mv-menu-icon__bar3
+                    li.p-mv-menu__list
+                        a(href="" alt="").p-mv-menu__link
+                            img(src="./assets/img/beginner.png" alt="")
+                            p.mv-menu__list-head 初めて<br>ご利用の方へ
+
+                    li.p-mv-menu__list
+                        a(href="" alt="").p-mv-menu__link
+                            img(src="./assets/img/move.png" alt="")
+                            p.mv-menu__list-head ログイン
+                    li.p-mv-menu__list
+                        a(href="" alt="").p-mv-menu__link
+                            img(src="./assets/img/heart.png" alt="")
+                            p.mv-menu__list-head お気に入り<br>レポート
+
+            .p-mv__buttons 
+                .c-mv-button
+                    .c-mv-button__link--gray おすすめの<br><span class="c-mv-button__link--accent">プラン</span><span class="c-mv-button__link--middle">から</span><br>プランナーを探す
+                        i.fa-solid.fa-angle-right
+                .c-mv-button
+                    .c-mv-button__link--blue 希望の<br><span class="c-mv-button__link--accent">エリア</span><span class="c-mv-button__link--middle">から</span><br>プランナーを探す
+                        i.fa-solid.fa-angle-right
+            
+        .p-drawer
+            .p-drawer__button 
+                    a(href="").c-drawer-button
+            .p-drawer__inner
+                h1.drawer-logo: img(src="./assets/img/logo.png" alt="")
+                ul.p-drawer-menu 
+                    li.p-drawer-menu__left 
+                        ul.p-drawer-menu__lists 
+                            li.p-drawer-menu__list
+                                a(href="").p-drawer-menu__link プランナーを探す
+                            li.p-drawer-menu__list
+                                a(href="").p-drawer-menu__link シンデレラレポ
+                            li.p-drawer-menu__list
+                                a(href="").p-drawer-menu__link お気に入りレポート
+                        .p-drawer-menu__button.u-sp-display-none
+                            a(href="").c-show-button--short ログイン
+                    li.p-drawer-menu__right
+                        ul.p-drawer-menu__lists 
+                            li.p-drawer-menu__list
+                                a(href="").p-drawer-menu__link 初めてご利用される方へ
+                            li.p-drawer-menu__list
+                                a(href="").p-drawer-menu__link よくあるご質問
+                            li.p-drawer-menu__list
+                                a(href="").p-drawer-menu__link お問い合わせ
+                    .p-drawer-menu__button.u-pc-display-none.u-tb-display-none  
+                            a(href="").c-show-button--short ログイン
+
+                .p-drawer-menu__documents 
+                    ul.p-document
+                            li.p-document__list
+                                a(href="").p-document__link 運営会社
+                            li.p-document__list
+                                a(href="").p-document__link プライバシーポリシー
+                            li.p-document__list
+                                a(href="").p-document__link 利用規約
+                span.p-drawer-menu__arrow 
+                    .c-arrow
+
+        .p-drawer-plan
+            .p-drawer-plan__bg
+            .p-drawer-plan__content 
+                ul.p-drawer-plan__lists
+                    li.p-drawer-plan__list 
+                        span.p-drawer-plan__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-plan__link
+                            .p-drawer-plan__img
+                                img(src="./assets/img/plan1.jpg" alt="")
+                            p.p-drawer-plan__text 国内挙式・披露宴
+                    li.p-drawer-plan__list 
+                        span.p-drawer-plan__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-plan__link
+                            .p-drawer-plan__img
+                                img(src="./assets/img/plan2.jpg" alt="")
+                            p.p-drawer-plan__text 海外ウェディング
+                    li.p-drawer-plan__list 
+                        span.p-drawer-plan__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-plan__link
+                            .p-drawer-plan__img
+                                img(src="./assets/img/plan3.jpg" alt="")
+                            p.p-drawer-plan__text フォトウェディング
+                    li.p-drawer-plan__list 
+                        span.p-drawer-plan__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-plan__link
+                            .p-drawer-plan__img
+                                img(src="./assets/img/plan4.jpg" alt="")
+                            p.p-drawer-plan__text 家族・少人数<br>ウェディング
+                    li.p-drawer-plan__list 
+                        span.p-drawer-plan__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-plan__link
+                            .p-drawer-plan__img
+                                img(src="./assets/img/plan5.jpg" alt="")
+                            p.p-drawer-plan__text リゾート・ビーチ<br>アウトドア<br>ウェディング
+                    
+                    
+
+        .p-drawer-area 
+            .p-drawer-area__bg
+            .p-drawer-area__content 
+                ul.p-drawer-area__lists
+                    li.p-drawer-area__list 
+                        span.p-drawer-area__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-area__link 北海道・東北(15)
+                    li.p-drawer-area__list 
+                        span.p-drawer-area__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-area__link 関東・甲信越(35)
+                    li.p-drawer-area__list 
+                        span.p-drawer-area__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-area__link 北陸・東海(25)
+                    li.p-drawer-area__list 
+                        span.p-drawer-area__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-area__link 関西・中国(18)
+                    li.p-drawer-area__list 
+                        span.p-drawer-area__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-area__link 四国・九州(16)
+                    li.p-drawer-area__list 
+                        span.p-drawer-area__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-area__link 沖縄(19)
+                    li.p-drawer-area__list 
+                        span.p-drawer-area__arrow 
+                            .c-plan-line
+                        a(href="").p-drawer-area__link 海外(10)
+
+        section.p-recent
+            .l-inner.p-recent__inner
+                h2.c-section-title.p-recent__title.recent <span class="c-section-title--icon"></span>Recent Planner and Reports<span class="c-section-title--after">最近見たレポートとプランナー</span> 
+                .p-recent-planner
+                    h3.c-section-subtitle.recent Planner<span class="c-section-subtitle--black">プランナー</span> 
+                    .p-recent-planner__cards
+                        .p-recent-planner__prev 
+                            .c-scroll--blue: i.fa-solid.fa-angle-left
+                        .p-recent-planner__next 
+                            .c-scroll--blue: i.fa-solid.fa-angle-right
+                        .p-recent-planner__cards__wrapper
+                            .p-recent-planner-card
+                                img(src="./assets/img/planner1.png" alt="").p-recent-planner-card__img
+                                .p-recent-planner-card__content 
+                                    .p-recent-planner-card__mark
+                                        span.c-star-mark ☆
+                                    .p-recent-planner-card__profile
+                                        p.p-recent-planner-card__name 佐々木 結
+                                        p.p-recent-planner-card__company オリオンウェディング
+                                    .p-recent-planner-card__areas 
+                                        .p-recent-planner-card__icon
+                                            span.c-area エリア
+                                        .p-recent-planner-card__area
+                                            .p-recent-planner-card__area__item 東京
+                                            .p-recent-planner-card__area__item 神奈川
+                                            .p-recent-planner-card__area__item 千葉
+                                            .p-recent-planner-card__area__item 埼玉
+                                            .p-recent-planner-card__area__item 長野
+                                            .p-recent-planner-card__area__item 愛知
+                                            .p-recent-planner-card__area__item 岡山
+                                            .p-recent-planner-card__area__item 大阪
+                                            .p-recent-planner-card__area__item 広島
+                                            .p-recent-planner-card__area__item 福岡
+                                            .p-recent-planner-card__area__item 沖縄
+                                            .p-recent-planner-card__area__item 海外
+
+                            .p-recent-planner-card
+                                img(src="./assets/img/planner2.png" alt="").p-recent-planner-card__img
+                                .p-recent-planner-card__content 
+                                    .p-recent-planner-card__mark
+                                        span.c-star-mark ☆
+                                    .p-recent-planner-card__profile
+                                        p.p-recent-planner-card__name 鈴木 直子
+                                        p.p-recent-planner-card__company Orangewedding
+                                    .p-recent-planner-card__areas 
+                                        .p-recent-planner-card__icon
+                                            span.c-area エリア
+                                        .p-recent-planner-card__area
+                                            .p-recent-planner-card__area__item 東京
+                                            .p-recent-planner-card__area__item 神奈川
+                                            .p-recent-planner-card__area__item 千葉
+                                            .p-recent-planner-card__area__item 埼玉
+                                            .p-recent-planner-card__area__item 長野
+                                            .p-recent-planner-card__area__item 愛知
+                                            .p-recent-planner-card__area__item 岡山
+                                            .p-recent-planner-card__area__item 大阪
+                                            .p-recent-planner-card__area__item 広島
+                                            .p-recent-planner-card__area__item 福岡
+                                            .p-recent-planner-card__area__item 沖縄
+                                            .p-recent-planner-card__area__item 海外
+
+                            .p-recent-planner-card
+                                img(src="./assets/img/planner3.png" alt="").p-recent-planner-card__img
+                                .p-recent-planner-card__content 
+                                    .p-recent-planner-card__mark
+                                        span.c-star-mark ☆
+                                    .p-recent-planner-card__profile
+                                        p.p-recent-planner-card__name 加藤 美玲
+                                        p.p-recent-planner-card__company 株式会社best wedding
+                                    .p-recent-planner-card__areas 
+                                        .p-recent-planner-card__icon
+                                            span.c-area エリア
+                                        .p-recent-planner-card__area
+                                            .p-recent-planner-card__area__item 東京
+                                            .p-recent-planner-card__area__item 神奈川
+                                            .p-recent-planner-card__area__item 千葉
+                                            .p-recent-planner-card__area__item 埼玉
+                                            .p-recent-planner-card__area__item 長野
+                                            .p-recent-planner-card__area__item 愛知
+                                            .p-recent-planner-card__area__item 岡山
+                                            .p-recent-planner-card__area__item 大阪
+                                            .p-recent-planner-card__area__item 広島
+                                            .p-recent-planner-card__area__item 福岡
+                                            .p-recent-planner-card__area__item 沖縄
+                                            .p-recent-planner-card__area__item 海外
+                .p-recent-report        
+                    h3.c-section-subtitle.recent Report<span class="c-section-subtitle--black">レポート</span>
+                    .p-recent-report__cards
+                        .p-recent-report__prev 
+                            .c-scroll--blue: i.fa-solid.fa-angle-left
+                        .p-recent-report__next 
+                            .c-scroll--blue: i.fa-solid.fa-angle-right
+                        .p-recent-report__cards__wrapper
+                            .p-recent-report-card
+                                span.p-recent-report-card__mark
+                                    span.c-heart-mark ♡
+                                img(src="./assets/img/report1.jpg" alt="").p-recent-report-card__img
+                                .p-recent-report-card__content 
+                                    h4.p-recent-report-card__head ペットと一緒に思い出の石垣島で叶えるウェディング 
+                                    .p-recent-report-card__under 
+                                        .c-categories1 リゾート・ビーチ・アウトドアウェディング
+                                        .p-recent-report-card__area-box
+                                            span.c-area エリア
+                                            .p-recent-report-card__area 沖縄
+                                        .p-recent-report-card__tags 
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #国内
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #フォトウェディング
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #前撮り
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #アウトドアウェディング
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #和婚
+                                        .p-recent-report-card__more
+                                            a(href="").c-more-button Read more
+
+                            .p-recent-report-card 
+                                span.p-recent-report-card__mark
+                                    span.c-heart-mark ♡
+                                img(src="./assets/img/report2.jpg" alt="").p-recent-report-card__img
+                                .p-recent-report-card__content 
+                                    h4.p-recent-report-card__head 緑に囲まれたナチュラルガーデンウェディング 
+                                    .p-recent-report-card__under 
+                                        .c-categories1 リゾート・ビーチ・アウトドアウェディング
+                                        .p-recent-report-card__area-box
+                                            span.c-area エリア
+                                            .p-recent-report-card__area 軽井沢
+                                        .p-recent-report-card__tags 
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #国内
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #フォトウェディング
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #前撮り
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #アウトドアウェディング
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #家族婚
+                                        .p-recent-report-card__more
+                                            a(href="").c-more-button Read more
+
+
+                            .p-recent-report-card 
+                                span.p-recent-report-card__mark
+                                    span.c-heart-mark ♡
+                                img(src="./assets/img/report3.jpg" alt="").p-recent-report-card__img
+                                .p-recent-report-card__content 
+                                    h4.p-recent-report-card__head 美しい紅葉と和装フォトウェディング 
+                                    .p-recent-report-card__under 
+                                        .c-categories1.color2 フォトウェディング
+                                        .p-recent-report-card__area-box
+                                            span.c-area エリア
+                                            .p-recent-report-card__area 関東
+                                        .p-recent-report-card__tags 
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #国内
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #フォトウェディング
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #家族婚
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #アウトドアウェディング
+                                        .p-recent-report-card__more
+                                            a(href="").c-more-button Read more
+
+
+                            .p-recent-report-card 
+                                span.p-recent-report-card__mark
+                                    span.c-heart-mark ♡
+                                img(src="./assets/img/report4.jpg" alt="").p-recent-report-card__img
+                                .p-recent-report-card__content 
+                                    h4.p-recent-report-card__head 思い出の浜辺で二人だけのウェディング 
+                                    .p-recent-report-card__under 
+                                        .c-categories1.color2 フォトウェディング
+                                        .p-recent-report-card__area-box
+                                            span.c-area エリア
+                                            .p-recent-report-card__area 関東
+                                        .p-recent-report-card__tags 
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #国内
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #フォトウェディング
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #家族婚
+                                            .p-recent-report-card__tag
+                                                a(href="").c-tag #アウトドアウェディング
+                                        .p-recent-report-card__more
+                                            a(href="").c-more-button Read more        
+
+        section.p-about
+            .l-inner
+                h2.c-section-title.p-reports__title.about <span class="c-section-title--icon"></span>What's Best Planner ?<span class="c-section-title--after">ベストプランナーとは</span> 
+                .p-about__content
+                    h4.p-about__head <span>結</span>婚式を創るのはヒト。<br>ふたりの理想の結婚式を一緒に創ってくれる<br>ヒトから探しませんか。
+                    p.p-about__text ふたりの理想を叶えてくれるプランナーを<br>自分達の目で見てお願いしたい。<br>海外では当たり前のことが、<br class="u-sp-display">日本では式場からが基本になっています。<br><br>ふたりの希望に寄り添い、<br class="u-sp-display">しっかり受け止めて、<br>親身に叶えようとしてくれる<br class="u-sp-display">プランナーがいます。<br><br>そして、<br>「自分たちにとって最高の結婚式だった！」<br>「この方にお願いして本当に良かった！<br>こんな声を増やしていきたいと思っています。
+                    p.p-about__message 初めてご利用される方へ
+                    .p-about__button
+                        a(href="").c-about-button ベストプランナーの使い方を見る
+            .p-about__persons
+                ul 
+                    li.p-about__img
+                        img(src="./assets/img/person1.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person2.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person3.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person4.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person5.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person2.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person1.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person3.jpg" alt="")
+                ul
+                    li.p-about__img
+                        img(src="./assets/img/person1.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person2.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person3.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person4.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person5.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person2.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person1.jpg" alt="")
+                    li.p-about__img
+                        img(src="./assets/img/person3.jpg" alt="")
+        section.p-plan
+            .l-inner
+                h2.c-section-title.p-reports__title <span class="c-section-title--icon"></span>Reccomend Plan<span class="c-section-title--after">おすすめのプランからプランナーを探す</span> 
+                .p-plan__content
+                    .p-plan__content__low1
+                        .p-plan-item1
+                            a(href="").p-plan-item1__link
+                                span.p-plan-item__icon
+                                span.p-plan-item__border 
+                                .p-plan-item__line 
+                                    .c-plan-line
+                                .p-plan-item__img 
+                                    img(src="./assets/img/plan1.jpg")
+                                .p-plan-item__content 
+                                    h4.p-plan-item__title 国内<br>挙式・披露宴
+
+                        .p-plan-item2 
+                            a(href="").p-plan-item2__link
+                                span.p-plan-item__icon.item2
+                                span.p-plan-item__border 
+                                .p-plan-item__line 
+                                    .c-plan-line
+                                .p-plan-item__img 
+                                    img(src="./assets/img/plan2.jpg")
+                                .p-plan-item__content 
+                                    h4.p-plan-item__title 海外<br>ウェディング
+
+                        .p-plan-item3 
+                            a(href="").p-plan-item3__link
+                                span.p-plan-item__icon.item3
+                                span.p-plan-item__border 
+                                .p-plan-item__line 
+                                    .c-plan-line
+                                .p-plan-item__img 
+                                    img(src="./assets/img/plan3.jpg")
+                                .p-plan-item__content 
+                                    h4.p-plan-item__title フォト<br>ウェディング
+
+                    .p-plan__content__low2
+                        .p-plan-item4 
+                            a(href="").p-plan-item4__link
+                                span.p-plan-item__icon.item4
+                                span.p-plan-item__border 
+                                .p-plan-item__line 
+                                    .c-plan-line
+                                .p-plan-item__img 
+                                    img(src="./assets/img/plan4.jpg")
+                                .p-plan-item__content 
+                                    h4.p-plan-item__title 家族・少人数<br>ウェディング
+
+                        .p-plan-item5 
+                            a(href="").p-plan-item5__link
+                                span.p-plan-item__icon.item5
+                                span.p-plan-item__border
+                                .p-plan-item__line 
+                                    .c-plan-line 
+                                .p-plan-item__img 
+                                    img(src="./assets/img/plan5.jpg")
+                                .p-plan-item__content 
+                                    h4.p-plan-item__title リゾート・ビーチ<br>アウトドア<br>ウェディング
+                            
+        section.p-popular
+            .l-inner.p-popular__inner
+                h2.c-section-title.p-popular__title.popular <span class="c-section-title--icon"></span>Popular Reports<span class="c-section-title--after">人気のウェディングレポート</span> 
+                .p-popular__reports
+                    h3.c-section-subtitle Ranking<span class="c-section-subtitle--black">人気レポートランキング</span> 
+                    .p-popular__reports__content
+                        .p-popular-reports-card
+                            span.p-popular-reports-card__mark 
+                                .c-heart-mark ♡
+                            .p-popular-reports-card__ribbon
+                                span.c-ribbon-first No<br><span>01</span>
+                            .p-popular-reports-card__top
+                                .p-popular-reports-card__top__img 
+                                    img(src="./assets/img/popular1.jpg" alt="")
+                                .p-popular-reports-card__top__content 
+                                    h4.p-popular-reports-card__title ペットと一緒に思い出の石垣島で叶えるウェディング
+                                    .c-categories2 リゾート・ビーチ・アウトドアウェディング
+                                    .p-popular-reports-card__area-box
+                                        span.c-area エリア
+                                        .p-popular-reports-card__area 関東
+                                    .p-popular-reports-card__tags 
+                                        .p-popular-reports-card__tag 
+                                            a(href="").c-tag #沖縄リゾートウェディング 
+                                        .p-popular-reports-card__tag 
+                                            a(href="").c-tag #国内
+                                        .p-popular-reports-card__tag 
+                                            a(href="").c-tag #家族婚
+                                        .p-popular-reports-card__tag 
+                                            a(href="").c-tag #1.5次会
+                                        .p-popular-reports-card__tag 
+                                            a(href="").c-tag #アウトドアウェディング
+                            .p-popular-reports-card__under
+                                p.p-popular-reports-card__under__head 出会ってからずっと一緒だった愛犬と初めての旅行で訪れた石垣島でのウェディング。
+                                p.popular-reports-card__under__text レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。<br>レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。
+                                .p-card-person 
+                                    img(src="./assets/img/person2.jpg").p-card-person__img
+                                    .p-card-person__content 
+                                        p.p-card-person__head 担当プランナー
+                                        p.p-card-person__name 鈴木 咲
+                                        p.p-card-person__company 株式会社p-wedding
+                            .p-popular-reports-card__more 
+                                a(href="").c-more-button Read more
+
+                        .p-popular-reports-card2
+                            span.p-popular-reports-card2__mark 
+                                .c-heart-mark ♡
+                            .p-popular-reports-card2__ribbon
+                                span.c-ribbon-second No<br><span>02</span>
+                            .p-popular-reports-card2__top
+                                .p-popular-reports-card2__top__img 
+                                    img(src="./assets/img/popular2.jpg" alt="")
+                                .p-popular-reports-card2__top__content 
+                                    h4.p-popular-reports-card2__title 大好きなペットと一緒にガーデンウェディング
+                                    .c-categories2.color3 国内挙式・披露宴
+                                    .p-popular-reports-card2__area-box
+                                        span.c-area エリア
+                                        .p-popular-reports-card2__area 関東
+                                    .p-popular-reports-card2__tags 
+                                        .p-popular-reports-card2__tag 
+                                            a(href="").c-tag #国内
+                                        .p-popular-reports-card2__tag 
+                                            a(href="").c-tag #披露宴
+                                        .p-popular-reports-card2__tag 
+                                            a(href="").c-tag #挙式
+                                        .p-popular-reports-card2__tag 
+                                            a(href="").c-tag #家族婚
+                                        .p-popular-reports-card2__tag 
+                                            a(href="").c-tag #レストラン
+                            .p-popular-reports-card2__under
+                                p.p-popular-reports-card2__under__head 出会ってからずっと一緒だった愛犬と初めての旅行で訪れた石垣島でのウェディング。
+                                p.popular-reports-card2__under__text レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。
+                                .p-card-person 
+                                    img(src="./assets/img/person5.jpg").p-card-person__img
+                                    .p-card-person__content 
+                                        p.p-card-person__head 担当プランナー
+                                        p.p-card-person__name 鈴木 直子
+                                        p.p-card-person__company 株式会社Orange wedding
+                            .p-popular-reports-card2__more 
+                                a(href="").c-more-button Read more
+
+                        .p-popular-reports-card2
+                            span.p-popular-reports-card2__mark 
+                                .c-heart-mark ♡
+                            .p-popular-reports-card2__ribbon
+                                span.c-ribbon-third No<br><span>03</span>
+                            .p-popular-reports-card2__top
+                                .p-popular-reports-card2__top__img 
+                                    img(src="./assets/img/popular3.jpg" alt="")
+                                .p-popular-reports-card2__top__content 
+                                    h4.p-popular-reports-card2__title 最高のロケーションでフォトウェディング
+                                    .c-categories2.color2 フォトウェディング
+                                    .p-popular-reports-card2__area-box
+                                        span.c-area エリア
+                                        .p-popular-reports-card2__area 関東
+                                    .p-popular-reports-card2__tags 
+                                        .p-popular-reports-card2__tag 
+                                            a(href="").c-tag #国内
+                                        .p-popular-reports-card2__tag 
+                                            a(href="").c-tag #披露宴
+                                        .p-popular-reports-card2__tag 
+                                            a(href="").c-tag #挙式
+                                        .p-popular-reports-card2__tag 
+                                            a(href="").c-tag #家族婚
+                                        .p-popular-reports-card2__tag 
+                                            a(href="").c-tag #レストラン
+                            .p-popular-reports-card2__under
+                                p.p-popular-reports-card2__under__head 大好きな地元の夕暮れで幻想的なウェディングフォト。
+                                p.popular-reports-card2__under__text レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。レポート本文が入ります。
+                                .p-card-person 
+                                    img(src="./assets/img/person6.jpg").p-card-person__img
+                                    .p-card-person__content 
+                                        p.p-card-person__head 担当プランナー
+                                        p.p-card-person__name 加藤 結
+                                        p.p-card-person__company honey wedding
+                            .p-popular-reports-card2__more 
+                                a(href="").c-more-button Read more
+                    .p-popular__reports__button 
+                        a(href="").c-show-button 人気レポートランキングを<br class="u-sp-display">もっとみる
+
+                .p-popular__plan
+                    .p-popular__plan__inner
+                        h3.c-section-subtitle Reports By Plan<span class="c-section-subtitle--black">プラン別人気レポート</span> 
+                        .p-popular__plan__content
+                            .p-popular__plan__flex
+                                .p-popular__plan__item
+                                    .u-text-align-center 
+                                        h4.p-popular__plan__item__title.center 国内挙式・披露宴
+                                    .p-card
+                                        span.p-card__mark 
+                                            .c-heart-mark ♡
+                                        .p-card__img: img(src="./assets/img/wedding1.jpg" alt="")
+                                        .p-card__textarea
+                                            .p-card__head 100名のゲストに囲まれた2年越しの結婚式
+                                            .p-card__area-box
+                                                span.c-area エリア
+                                                .p-card__area 関東
+                                            .p-card__tags 
+                                                .p-card__tag 
+                                                    a(href="").c-tag #国内
+                                                .p-card__tag 
+                                                        a(href="").c-tag #フォトウェディング
+                                                .p-card__tag 
+                                                    a(href="").c-tag #前撮り
+                                                .p-card__tag 
+                                                    a(href="").c-tag #和婚
+                                                .p-card__tag 
+                                                    a(href="").c-tag #前撮り
+                                        .p-card-person.p-card__person 
+                                            img(src="./assets/img/person1.jpg").p-card-person__img
+                                            .p-card-person__content 
+                                                p.p-card-person__head 担当プランナー
+                                                p.p-card-person__name 加藤 美玲
+                                                p.p-card-person__company 株式会社best wedding
+                                        .p-card__more.u-sp-display-none 
+                                            a(href="").c-more-button Read more
+
+                                .p-popular__plan__item
+                                    .u-text-align-center 
+                                        h4.p-popular__plan__item__title.color2.center フォトウェディング
+                                    .p-card
+                                        span.p-card__mark 
+                                            .c-heart-mark ♡
+                                        .p-card__img: img(src="./assets/img/wedding2.jpg" alt="")
+                                        .p-card__textarea
+                                            .p-card__head ふたりの地元の豊川稲荷でフォトウェディング
+                                            .p-card__area-box
+                                                span.c-area エリア
+                                                .p-card__area 東海
+                                            .p-card__tags 
+                                                .p-card__tag 
+                                                    a(href="").c-tag #国内
+                                                .p-card__tag 
+                                                        a(href="").c-tag #フォトウェディング
+                                                .p-card__tag 
+                                                    a(href="").c-tag #前撮り
+                                                .p-card__tag 
+                                                    a(href="").c-tag #和婚
+                                                .p-card__tag 
+                                                    a(href="").c-tag #前撮り
+                                        .p-card-person.p-card__person 
+                                            img(src="./assets/img/person2.jpg").p-card-person__img
+                                            .p-card-person__content 
+                                                p.p-card-person__head 担当プランナー
+                                                p.p-card-person__name 佐々木 結
+                                                p.p-card-person__company オリオン ウェディング
+                                        .p-card__more.u-sp-display-none
+                                            a(href="").c-more-button Read more
+
+                                .p-popular__plan__item
+                                    .u-text-align-center
+                                        h4.p-popular__plan__item__title.color3 リゾート・アウトドア・<br>ビーチウェディング
+                                    .p-card
+                                        span.p-card__mark 
+                                            .c-heart-mark ♡
+                                        .p-card__img: img(src="./assets/img/wedding3.jpg" alt="")
+                                        .p-card__textarea
+                                            .p-card__head 唯一無二の水中ウェディング幻想的な沖縄の海で
+                                            .p-card__area-box
+                                                span.c-area エリア
+                                                .p-card__area 関東
+                                            .p-card__tags 
+                                                .p-card__tag 
+                                                    a(href="").c-tag #国内
+                                                .p-card__tag 
+                                                        a(href="").c-tag #フォトウェディング
+                                                .p-card__tag 
+                                                    a(href="").c-tag #前撮り
+                                                .p-card__tag 
+                                                    a(href="").c-tag #和婚
+                                                .p-card__tag 
+                                                    a(href="").c-tag #前撮り
+                                        .p-card-person.p-card__person 
+                                            img(src="./assets/img/person2.jpg").p-card-person__img
+                                            .p-card-person__content 
+                                                p.p-card-person__head 担当プランナー
+                                                p.p-card-person__name 加藤 美玲
+                                                p.p-card-person__company 株式会社best wedding
+                                        .p-card__more.u-sp-display-none
+                                            a(href="").c-more-button Read more
+
+                            .p-popular__plan__button.content-in
+                                a(href="").c-show-button プラン別人気レポートをもっとみる
+
+                        .p-popular__plan__button.content-out
+                            a(href="").c-show-button プラン別人気レポートをもっとみる
+
+                .p-popular__news 
+                    h3.c-section-subtitle.popular-news New Reports<span class="c-section-subtitle--black">新着レポート</span> 
+                    .p-popular__news__content
+                        .p-popular__news__prev 
+                            .c-scroll--blue: i.fa-solid.fa-angle-left
+                        .p-popular__news__next 
+                            .c-scroll--blue: i.fa-solid.fa-angle-right
+                        .p-popular__news__prev--sp 
+                            .c-scroll--gray: i.fa-solid.fa-angle-left
+                        .p-popular__news__next--sp
+                            .c-scroll--gray: i.fa-solid.fa-angle-right
+                        .p-popular__news__wrapper 
+                            .p-popular__news__item
+                                .p-card
+                                    span.p-card__mark 
+                                        .c-heart-mark ♡
+                                    .p-card__img: img(src="./assets/img/wedding4.jpg" alt="")
+                                    .p-card__textarea
+                                        .p-card__head ドレスコードなしのカジュアルウェディング
+                                        .p-card__area-box
+                                            span.c-area エリア
+                                            .p-card__area 関東
+                                        .p-card__tags 
+                                            .p-card__tag 
+                                                a(href="").c-tag #国内
+                                            .p-card__tag 
+                                                    a(href="").c-tag #フォトウェディング
+                                            .p-card__tag 
+                                                a(href="").c-tag #前撮り
+                                            .p-card__tag 
+                                                a(href="").c-tag #和婚
+                                            .p-card__tag 
+                                                a(href="").c-tag #前撮り
+                                    .p-card-person.p-card__person 
+                                        img(src="./assets/img/person2.jpg").p-card-person__img
+                                        .p-card-person__content 
+                                            p.p-card-person__head 担当プランナー
+                                            p.p-card-person__name 加藤 美玲
+                                            p.p-card-person__company 株式会社best wedding
+                                    .p-card__more
+                                        a(href="").c-more-button Read more
+                            .p-popular__news__item
+                                .p-card
+                                    span.p-card__mark 
+                                        .c-heart-mark ♡
+                                    .p-card__img: img(src="./assets/img/wedding2.jpg" alt="")
+                                    .p-card__textarea
+                                        .p-card__head ふたりの地元の豊川稲荷でフォトウェディング
+                                        .p-card__area-box
+                                            span.c-area エリア
+                                            .p-card__area 東海
+                                        .p-card__tags 
+                                            .p-card__tag 
+                                                a(href="").c-tag #国内
+                                            .p-card__tag 
+                                                    a(href="").c-tag #フォトウェディング
+                                            .p-card__tag 
+                                                a(href="").c-tag #前撮り
+                                            .p-card__tag 
+                                                a(href="").c-tag #和婚
+                                            .p-card__tag 
+                                                a(href="").c-tag #家族婚
+                                            .p-card__tag 
+                                                a(href="").c-tag #ロケーション
+                                    .p-card-person.p-card__person 
+                                        img(src="./assets/img/person5.jpg").p-card-person__img
+                                        .p-card-person__content 
+                                            p.p-card-person__head 担当プランナー
+                                            p.p-card-person__name 鈴木 直子
+                                            p.p-card-person__company 株式会社Orange Wedding
+                                    .p-card__more 
+                                        a(href="").c-more-button Read more
+                            .p-popular__news__item
+                                .p-card
+                                    span.p-card__mark 
+                                        .c-heart-mark ♡
+                                    .p-card__img: img(src="./assets/img/wedding3.jpg" alt="")
+                                    .p-card__textarea
+                                        .p-card__head 唯一無二の水中ウェディング幻想的な沖縄の海で
+                                        .p-card__area-box
+                                            span.c-area エリア
+                                            .p-card__area 沖縄
+                                        .p-card__tags 
+                                            .p-card__tag 
+                                                a(href="").c-tag #国内
+                                            .p-card__tag 
+                                                    a(href="").c-tag #リゾートウェディング
+                                            .p-card__tag 
+                                                a(href="").c-tag #沖縄
+                                            .p-card__tag 
+                                                a(href="").c-tag #ビーチウェディング
+                                            .p-card__tag 
+                                                a(href="").c-tag #前撮り
+                                    .p-card-person.p-card__person
+                                        img(src="./assets/img/person3.jpg").p-card-person__img
+                                        .p-card-person__content 
+                                            p.p-card-person__head 担当プランナー
+                                            p.p-card-person__name 鈴木 直子
+                                            p.p-card-person__company 株式会社Orange Wedding
+                                    .p-card__more 
+                                        a(href="").c-more-button Read more
+                            .p-popular__news__item
+                                .p-card
+                                    span.p-card__mark 
+                                        .c-heart-mark ♡
+                                    .p-card__img: img(src="./assets/img/wedding5.jpg" alt="")
+                                    .p-card__textarea
+                                        .p-card__head 100名のゲストに囲まれた2年越しの結婚式
+                                        .p-card__area-box
+                                            span.c-area エリア
+                                            .p-card__area 関東
+                                        .p-card__tags 
+                                            .p-card__tag 
+                                                a(href="").c-tag #国内
+                                            .p-card__tag 
+                                                a(href="").c-tag #フォトウェディング
+                                            .p-card__tag 
+                                                a(href="").c-tag #前撮り
+                                            .p-card__tag 
+                                                a(href="").c-tag #和婚
+                                            .p-card__tag 
+                                                a(href="").c-tag #前撮り
+                                    .p-card-person.p-card__person
+                                        img(src="./assets/img/person2.jpg").p-card-person__img
+                                        .p-card-person__content 
+                                            p.p-card-person__head 担当プランナー
+                                            p.p-card-person__name 尾崎 舞
+                                            p.p-card-person__company 株式会社best wedding
+                                    .p-card__more 
+                                        a(href="").c-more-button Read more   
+                    
+                    .p-popular__news__button 
+                        a(href="").c-show-button 新着レポートをもっと見る
+                
+        section.p-planner
+            .l-inner 
+                h2.c-section-title.p-planner__title <span class="c-section-title--icon"></span>Reccomend Planner<span class="c-section-title--after">人気のウェディングプランナー</span> 
+                .p-planner__rank
+                    h3.c-section-subtitle.p-planner__subtitle Ranking<span class="c-section-subtitle--black">人気プランナーランキング</span> 
+                    .p-planner__rank__content 
+                        .p-planner__rank__prev
+                            .c-scroll--gray: i.fa-solid.fa-angle-left
+                        .p-planner__rank__next 
+                            .c-scroll--gray: i.fa-solid.fa-angle-right
+                        .p-planner-card
+                            span.p-planner-card__mark 
+                                .c-ribbon-first No<br><span>01</span>
+                            .p-planner-card__top 
+                                .p-planner-card__top__person
+                                    span.p-planner-card__top__mark 
+                                        .c-star-mark ☆
+                                    img(src="./assets/img/person1.jpg" alt="").p-planner-card__top__img
+                                    p.p-planner-card__top__name 鈴木 直子
+                                    p.p-planner-card__top__company 株式会社mirage
+                                .p-planner-card__top__content
+                                    .p-planner-card__top__head 心に残る<br>ウェディングを
+                                    .p-planner-card__top__areas 
+                                        span.c-area エリア
+                                        .p-planner-card__top__area 東京 神奈川 千葉 埼玉 長野 愛知 岡山 大阪 広島 福岡 沖縄 海外
+                                    .p-planner-card__top__tags 
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #国内
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #海外
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #レストラン
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #海外
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #リゾートウェディング
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #海外
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #アウトドア
+
+                            .p-planner-card__tags 
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #国内
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #海外
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #レストラン
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #海外
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #リゾートウェディング
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #海外
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #アウトドア
+
+                            .p-planner-card__middle
+                                span.p-planner-card__middle__icon <i class="fa-solid fa-bullhorn"></i>Point 
+                                ul.li.p-planner-card__middle__lists
+                                    li.p-planner-card__middle__list ・オンライン相談OK
+                                    li.p-planner-card__middle__list ・担当挙式数200組以上
+                                    li.p-planner-card__middle__list ・アウトドアウェディングが登場
+                            .p-planner-card__under  
+                                .p-planner-card__under__icon <i class="fa-solid fa-camera"></i>Photo Garally
+                                .p-planner-card__under__imgs 
+                                    .p-planner-card__under__img
+                                        img(src="./assets/img/planner-rank1.jpg" alt="")
+                                    .p-planner-card__under__img
+                                        img(src="./assets/img/planner-rank2.jpg" alt="")
+
+                        .p-planner-card
+                            span.p-planner-card__mark 
+                                .c-ribbon-second No<br><span>02</span>
+                            .p-planner-card__top 
+                                .p-planner-card__top__person
+                                    span.p-planner-card__top__mark 
+                                        .c-star-mark ☆
+                                    img(src="./assets/img/person2.jpg" alt="").p-planner-card__top__img
+                                    p.p-planner-card__top__name 加藤 美玲
+                                    p.p-planner-card__top__company 株式会社Pwedding
+                                .p-planner-card__top__content
+                                    .p-planner-card__top__head 自分たちらしい結婚式を自分たちの手で
+                                    .p-planner-card__top__areas 
+                                        span.c-area エリア
+                                        .p-planner-card__top__area 東京 神奈川 千葉 長野 愛知 岡山 広島 福岡 沖縄 海外
+                                    .p-planner-card__top__tags.second
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #国内
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #海外
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #レストラン
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #海外
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #リゾートウェディング
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #海外
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #アウトドア
+
+                            .p-planner-card__tags 
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #国内
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #海外
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #レストラン
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #海外
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #リゾートウェディング
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #海外
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #アウトドア
+
+                            .p-planner-card__middle
+                                span.p-planner-card__middle__icon <i class="fa-solid fa-bullhorn"></i>Point
+                                ul.p-planner-card__middle__lists
+                                    li.p-planner-card__middle__list ・司会もできる
+                                    li.p-planner-card__middle__list ・打ち合わせ回数制限なし
+                                    li.p-planner-card__middle__list ・海外挙式OK
+                            .p-planner-card__under  
+                                .p-planner-card__under__icon <i class="fa-solid fa-camera"></i>Photo Garally
+                                .p-planner-card__under__imgs 
+                                    .p-planner-card__under__img
+                                        img(src="./assets/img/planner-rank3.jpg" alt="")
+                                    .p-planner-card__under__img
+                                        img(src="./assets/img/planner-rank4.jpg" alt="")
+
+                        .p-planner-card
+                            .p-planner-card__mark 
+                                .c-ribbon-third No<br><span>03</span>
+                            .p-planner-card__top 
+                                .p-planner-card__top__person
+                                    span.p-planner-card__top__mark 
+                                        .c-star-mark ☆
+                                    img(src="./assets/img/person3.jpg" alt="").p-planner-card__top__img
+                                    p.p-planner-card__top__name 尾崎 舞
+                                    p.p-planner-card__top__company hoihoi produce
+                                .p-planner-card__top__content
+                                    .p-planner-card__top__head 心に残る<br>ウェディングを
+                                    .p-planner-card__top__areas 
+                                        span.c-area エリア
+                                        .p-planner-card__top__area 東京 神奈川 千葉 長野 愛知 岡山 広島 福岡 沖縄 海外
+                                    .p-planner-card__top__tags.third 
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #国内
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #海外
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #レストラン
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #海外
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #リゾートウェディング
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #海外
+                                        .p-planner-card__top__tag 
+                                            a(href="").c-tag #アウトドア
+
+                            .p-planner-card__tags 
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #国内
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #海外
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #レストラン
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #海外
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #リゾートウェディング
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #海外
+                                .p-planner-card__top__tag 
+                                    a(href="").c-tag #アウトドア
+
+                            .p-planner-card__middle
+                                span.p-planner-card__middle__icon <i class="fa-solid fa-bullhorn"></i>Point 
+                                ul.li.p-planner-card__middle__lists
+                                    li.p-planner-card__middle__list ・司会もできる
+                                    li.p-planner-card__middle__list ・打ち合わせ回数制限なし
+                                    li.p-planner-card__middle__list ・海外挙式OK
+                            .p-planner-card__under  
+                                .p-planner-card__under__icon <i class="fa-solid fa-camera"></i>Photo Garally
+                                .p-planner-card__under__imgs 
+                                    .p-planner-card__under__img
+                                        img(src="./assets/img/planner-rank5.jpg" alt="")
+                                    .p-planner-card__under__img
+                                        img(src="./assets/img/planner-rank6.jpg" alt="")
+                .p-planner__new 
+                    h3.c-section-subtitle.p-planner__subtitle New in<span class="c-section-subtitle--black">新着プランナー</span> 
+                    .p-planner__new__content 
+                        .p-planner__new__prev 
+                            .c-scroll--gray: i.fa-solid.fa-angle-left
+                        .p-planner__new__next 
+                            .c-scroll--gray: i.fa-solid.fa-angle-right
+                        .p-planner__new__wrapper
+                            .p-planner-card.new
+                                .p-planner-card__top 
+                                    .p-planner-card__top__person
+                                        span.p-planner-card__top__mark 
+                                            .c-star-mark ☆
+                                        img(src="./assets/img/person5.jpg" alt="").p-planner-card__top__img
+                                        p.p-planner-card__top__name.new 鈴木 直子
+                                        p.p-planner-card__top__company 株式会社mirage
+                                    .p-planner-card__top__content
+                                        .p-planner-card__top__head 心に残るウェディングを
+                                        .p-planner-card__top__areas 
+                                            span.c-area エリア
+                                            .p-planner-card__top__area 東京 神奈川 千葉 埼玉 長野 愛知 岡山 大阪 広島 福岡 沖縄 海外
+                                        .p-planner-card__top__tags 
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #国内
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #レストラン
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #リゾートウェディング
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+
+                                .p-planner-card__tags.new 
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #国内
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #レストラン
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #リゾートウェディング
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #アウトドア
+
+                                .p-planner-card__middle.new
+                                    span.p-planner-card__middle__icon <i class="fa-solid fa-bullhorn"></i>Point 
+                                    ul.li.p-planner-card__middle__lists
+                                        li.p-planner-card__middle__list ・オンライン相談OK
+                                        li.p-planner-card__middle__list ・担当挙式数200組以上
+                                        li.p-planner-card__middle__list ・アウトドアウェディングが登場
+
+                            .p-planner-card.new
+                                .p-planner-card__top 
+                                    .p-planner-card__top__person
+                                        span.p-planner-card__top__mark 
+                                            .c-star-mark ☆
+                                        img(src="./assets/img/person1.jpg" alt="").p-planner-card__top__img
+                                        p.p-planner-card__top__name.new 酒井 奈々子
+                                        p.p-planner-card__top__company marry-wedding
+                                    .p-planner-card__top__content
+                                        .p-planner-card__top__head 心に残るウェディングを
+                                        .p-planner-card__top__areas 
+                                            span.c-area エリア
+                                            .p-planner-card__top__area 東京 神奈川 千葉 埼玉 長野 愛知 岡山 大阪 広島 福岡 沖縄 海外
+                                        .p-planner-card__top__tags 
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #国内
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #レストラン
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #リゾートウェディング
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+
+                                .p-planner-card__tags.new 
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #国内
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #レストラン
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #リゾートウェディング
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #アウトドア
+
+                                .p-planner-card__middle.new
+                                    span.p-planner-card__middle__icon <i class="fa-solid fa-bullhorn"></i>Point 
+                                    ul.li.p-planner-card__middle__lists
+                                        li.p-planner-card__middle__list ・オンライン相談OK
+                                        li.p-planner-card__middle__list ・担当挙式数200組以上
+                                        li.p-planner-card__middle__list ・アウトドアウェディングが登場
+                            
+                            .p-planner-card.new
+                                .p-planner-card__top 
+                                    .p-planner-card__top__person
+                                        span.p-planner-card__top__mark 
+                                            .c-star-mark ☆
+                                        img(src="./assets/img/person2.jpg" alt="").p-planner-card__top__img
+                                        p.p-planner-card__top__name.new 早川 智
+                                        p.p-planner-card__top__company marry-wedding
+                                    .p-planner-card__top__content
+                                        .p-planner-card__top__head 心に残るウェディングを
+                                        .p-planner-card__top__areas 
+                                            span.c-area エリア
+                                            .p-planner-card__top__area 東京 神奈川 千葉 埼玉 長野 愛知 岡山 大阪 広島 福岡 沖縄 海外
+                                        .p-planner-card__top__tags 
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #国内
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #レストラン
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #リゾートウェディング
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+
+                                .p-planner-card__tags.new 
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #国内
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #レストラン
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #リゾートウェディング
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #アウトドア
+
+                                .p-planner-card__middle.new
+                                    span.p-planner-card__middle__icon <i class="fa-solid fa-bullhorn"></i>Point 
+                                    ul.li.p-planner-card__middle__lists
+                                        li.p-planner-card__middle__list ・オンライン相談OK
+                                        li.p-planner-card__middle__list ・担当挙式数200組以上
+                                        li.p-planner-card__middle__list ・アウトドアウェディングが登場
+
+                            .p-planner-card.new
+                                .p-planner-card__top 
+                                    .p-planner-card__top__person
+                                        span.p-planner-card__top__mark 
+                                            .c-star-mark ☆
+                                        img(src="./assets/img/person3.jpg" alt="").p-planner-card__top__img
+                                        p.p-planner-card__top__name.new 水野 沙彩
+                                        p.p-planner-card__top__company marry-wedding
+                                    .p-planner-card__top__content
+                                        .p-planner-card__top__head 心に残るウェディングを
+                                        .p-planner-card__top__areas 
+                                            span.c-area エリア
+                                            .p-planner-card__top__area 東京 神奈川 千葉 埼玉 長野 愛知 岡山 大阪 広島 福岡 沖縄 海外
+                                        .p-planner-card__top__tags 
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #国内
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #レストラン
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #リゾートウェディング
+                                            .p-planner-card__top__tag 
+                                                a(href="").c-tag #海外
+
+                                .p-planner-card__tags.new 
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #国内
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #レストラン
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #リゾートウェディング
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #海外
+                                    .p-planner-card__top__tag 
+                                        a(href="").c-tag #アウトドア
+
+                                .p-planner-card__middle.new
+                                    span.p-planner-card__middle__icon <i class="fa-solid fa-bullhorn"></i>Point 
+                                    ul.li.p-planner-card__middle__lists
+                                        li.p-planner-card__middle__list ・オンライン相談OK
+                                        li.p-planner-card__middle__list ・担当挙式数200組以上
+                                        li.p-planner-card__middle__list ・アウトドアウェディングが登場
+                    .p-planner__button 
+                        a(href="").c-show-button プランナー一覧へ
+
+        section.p-tags 
+            .l-inner
+                h2.c-section-title.p-reports__title <span class="c-section-title--icon"></span>Pick up Tags<span class="c-section-title--after">人気のウェディングプランナー</span>  
+                .p-tags__content
+                    .p-tags-item 
+                        .p-tags-item__head 場所から
+                        .p-tags-item__tags
+                            .p-tags-item__tag 
+                                a(href="").c-tag #海外
+                            .p-tags-item__tag 
+                                a(href="").c-tag #軽井沢
+                            .p-tags-item__tag 
+                                a(href="").c-tag #京都で和婚
+                            .p-tags-item__tag 
+                                a(href="").c-tag #沖縄リゾートウェディング
+                    .p-tags-item 
+                        .p-tags-item__head こだわりから
+                        .p-tags-item__tags
+                            .p-tags-item__tag 
+                                a(href="").c-tag #野外ウェディング
+                            .p-tags-item__tag 
+                                a(href="").c-tag #ゲストハウス
+                            .p-tags-item__tag 
+                                a(href="").c-tag #自宅
+                            .p-tags-item__tag 
+                                a(href="").c-tag #アウトドアウェディング
+                            .p-tags-item__tag 
+                                a(href="").c-tag #専門式場
+                            .p-tags-item__tag 
+                                a(href="").c-tag #レストラン
+                            .p-tags-item__tag 
+                                a(href="").c-tag #ホテル
+                            .p-tags-item__tag 
+                                a(href="").c-tag #ビーチウェディング
+                            .p-tags-item__tag 
+                                a(href="").c-tag #ベントハウスウェディング
+                    .p-tags-item
+                        .p-tags-item__head 形式から
+                        .p-tags-item__tags
+                            .p-tags-item__tag 
+                                a(href="").c-tag #挙式
+                            .p-tags-item__tag 
+                                a(href="").c-tag #披露宴
+                            .p-tags-item__tag 
+                                a(href="").c-tag #2次会
+                            .p-tags-item__tag 
+                                a(href="").c-tag #1.5次会
+                            .p-tags-item__tag 
+                                a(href="").c-tag #前撮り
+                            .p-tags-item__tag 
+                                a(href="").c-tag #フォトウェディング
+                            .p-tags-item__tag 
+                                a(href="").c-tag #家族婚
+                            .p-tags-item__tag 
+                                a(href="").c-tag #ハネムーン
+
+        section.p-voice 
+            .l-inner 
+                h2.c-section-title.p-reports__title <span class="c-section-title--icon"></span>Voice<span class="c-section-title--after">先輩花嫁からの口コミ</span> 
+                .p-voice__content
+                    .p-voice__review 
+                        h3.c-section-subtitle.voice New voice<span class="c-section-subtitle--black">新着口コミ</span> 
+                        .p-voice__review__content
+                            .p-voice__review__prev 
+                                .c-scroll--blue: i.fa-solid.fa-angle-left
+                            .p-voice__review__next 
+                                .c-scroll--blue: i.fa-solid.fa-angle-right
+                            .p-voice__review__wrapper
+                                .p-voice-review-card 
+                                    span.p-voice-review-card__label 
+                                        .c-label <span>NEW</span>
+                                    .p-voice-review-card__img: img(src="./assets/img/voice.jpg" alt="")
+                                    .p-voice-review-card__content 
+                                        .p-voice-review-card__flex
+                                            .p-voice-review-card-top 
+                                                .p-voice-review-card-top__head 
+                                                    .p-voice-review-card-top__title 最高のプランナーさんに出会えました！ 
+                                                    .p-voice-review-card-top__satisfaction
+                                                        .p-voice-review-card-top__satisfaction__text プランナー満足度
+                                                        .p-voice-review-card-top__satisfaction__evaluation ★★★★<span>★</span>
+                                                    .p-voice-review-card-top__satisfaction__category 
+                                                        .c-categories1.color2 フォトウェディング
+                                                .p-voice-review-card-top__person
+                                                    .p-voice-review-card-top__person__img: img(src="./assets/img/person1.jpg" alt="") 
+                                                    .p-voice-review-card-top__person__name 鈴木 咲
+                                                    .p-voice-review-card-top__person__evaluation
+                                                        .p-voice-review-card-top__person__evaluation__mark ★★★★<span>★</span>
+                                                        .p-voice-review-card-top__person__evaluation__total 4.12
+                                                        .p-voice-review-card-top__person__evaluation__number (20)
+                                            .p-voice-review-card-under 
+                                                .p-voice-review-card-under__text 口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。
+                                                .p-voice-review-card-under__person ゆりゆりさん  28歳 女性
+                                                .p-voice-review-card-under__category 
+                                                    .c-categories1.color2 フォトウェディング
+                                    .p-voice-review-card__more 
+                                        a(href="").c-more-button Read more
+
+                                .p-voice-review-card 
+                                    span.p-voice-review-card__label 
+                                        .c-label <span>NEW</span>
+                                    .p-voice-review-card__img: img(src="./assets/img/voice.jpg" alt="")
+                                    .p-voice-review-card__content 
+                                        .p-voice-review-card-top 
+                                            .p-voice-review-card-top__head 
+                                                .p-voice-review-card-top__title 最高のプランナーさんに出会えました！ 
+                                                .p-voice-review-card-top__satisfaction
+                                                    .p-voice-review-card-top__satisfaction__text プランナー満足度
+                                                    .p-voice-review-card-top__satisfaction__evaluation ★★★★<span>★</span>
+                                            .p-voice-review-card-top__person
+                                                .p-voice-review-card-top__person__img: img(src="./assets/img/person1.jpg" alt="") 
+                                                .p-voice-review-card-top__person__name 鈴木 咲
+                                                .p-voice-review-card-top__person__evaluation
+                                                    .p-voice-review-card-top__person__evaluation__mark ★★★★<span>★</span>
+                                                    .p-voice-review-card-top__person__evaluation__total 4.12
+                                                    .p-voice-review-card-top__person__evaluation__number (20)
+                                        .p-voice-review-card-under 
+                                            .p-voice-review-card-under__text 口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。
+                                            .p-voice-review-card-under__person ゆりゆりさん  28歳 女性
+                                            .p-voice-review-card-under__category 
+                                                .c-categories1.color2 フォトウェディング
+                                    .p-voice-review-card__more 
+                                        a(href="").c-more-button Read more
+
+                                .p-voice-review-card-sp
+                                    span.p-voice-review-card__label 
+                                        .c-label <span>NEW</span>
+                                    .p-voice-review-card-sp__flex
+                                        .p-voice-review-card-sp__img: img(src="./assets/img/voice.jpg" alt="")
+                                        .p-voice-review-card-sp__content 
+                                            .p-voice-review-card-top 
+                                                .p-voice-review-card-top__head 
+                                                    .p-voice-review-card-top__title 最高のプランナーさんに出会えました！ 
+                                                    .p-voice-review-card-top__satisfaction
+                                                        .p-voice-review-card-top__satisfaction__text プランナー満足度
+                                                        .p-voice-review-card-top__satisfaction__evaluation ★★★★<span>★</span>
+                                                    .p-voice-review-card-top__satisfaction__category 
+                                                        .c-categories1.color2 フォトウェディング
+                                            .p-voice-review-card-under 
+                                                .p-voice-review-card-under__text 口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。
+                                                .p-voice-review-card-under__person ゆりゆりさん  28歳 女性
+                                                .p-voice-review-card-under__category 
+                                                    .c-categories1.color2 フォトウェディング
+                                    .p-voice-review-card-top__person
+                                        .p-voice-review-card-top__person__img.sp: img(src="./assets/img/person1.jpg" alt="") 
+                                        .p-voice-review-card-top__person__name 鈴木 咲
+                                    .p-voice-review-card-top__person__evaluation.sp
+                                        .p-voice-review-card-top__person__evaluation__mark ★★★★<span>★</span>
+                                        .p-voice-review-card-top__person__evaluation__total 4.12
+                                        .p-voice-review-card-top__person__evaluation__number (20)
+                                    .p-voice-review-card__more 
+                                        a(href="").c-more-button Read more
+
+                                .p-voice-review-card-sp
+                                    span.p-voice-review-card__label 
+                                        .c-label <span>NEW</span>
+                                    .p-voice-review-card-sp__flex
+                                        .p-voice-review-card-sp__img: img(src="./assets/img/voice.jpg" alt="")
+                                        .p-voice-review-card-sp__content 
+                                            .p-voice-review-card-top 
+                                                .p-voice-review-card-top__head 
+                                                    .p-voice-review-card-top__title 最高のプランナーさんに出会えました！ 
+                                                    .p-voice-review-card-top__satisfaction
+                                                        .p-voice-review-card-top__satisfaction__text プランナー満足度
+                                                        .p-voice-review-card-top__satisfaction__evaluation ★★★★<span>★</span>
+                                                    .p-voice-review-card-top__satisfaction__category 
+                                                        .c-categories1.color2 フォトウェディング
+                                            .p-voice-review-card-under 
+                                                .p-voice-review-card-under__text 口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。
+                                                .p-voice-review-card-under__person ゆりゆりさん  28歳 女性
+                                                .p-voice-review-card-under__category 
+                                                    .c-categories1.color2 フォトウェディング
+                                    .p-voice-review-card-top__person
+                                        .p-voice-review-card-top__person__img.sp: img(src="./assets/img/person1.jpg" alt="") 
+                                        .p-voice-review-card-top__person__name 鈴木 咲
+                                    .p-voice-review-card-top__person__evaluation.sp
+                                        .p-voice-review-card-top__person__evaluation__mark ★★★★<span>★</span>
+                                        .p-voice-review-card-top__person__evaluation__total 4.12
+                                        .p-voice-review-card-top__person__evaluation__number (20)
+                                    .p-voice-review-card__more 
+                                        a(href="").c-more-button Read more
+
+                    .p-voice__satisfaction
+                        h3.c-section-subtitle.voice Ranking<span class="c-section-subtitle--black">プランナー満足度ランキング</span> 
+                        .p-voice__satisfaction__content
+                            .p-voice-satisfaction-card 
+                                .p-voice-satisfaction-card__ribbon 
+                                    .c-ribbon-first No<br><span>01</span>
+                                .p-voice-satisfaction-card__top 
+                                    .p-voice-satisfaction-card__top__img: img(src="./assets/img/person6-2.jpg" alt="")
+                                    .p-voice-satisfaction-card__top__content
+                                        p.p-voice-satisfaction-card__company 株式会社P-Wedding 
+                                        p.p-voice-satisfaction-card__name 佐藤 理恵
+                                        .p-voice-review-card-top__person__evaluation.satisfaction
+                                            .p-voice-review-card-top__person__evaluation__mark ★★★★<span>★</span>
+                                            .p-voice-review-card-top__person__evaluation__total 4.12
+                                            .p-voice-review-card-top__person__evaluation__number (20)
+                                .p-voice-satisfaction-card__under 
+                                    .p-voice-satisfaction-card__under__title プランナーへの口コミ 
+                                    p.p-voice-satisfaction-card__under__head 私らしい結婚式ができました！
+                                    p.p-voice-satisfaction-card__under__text 打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取りできました。
+                                .p-voice-satisfaction-card__top
+
+                                .p-voice-satisfaction-card__button 
+                                    a(href="").c-planner-button このプランナーページへ
+
+                            .p-voice-satisfaction-card 
+                                .p-voice-satisfaction-card__ribbon 
+                                    .c-ribbon-second No<br><span>02</span>
+                                .p-voice-satisfaction-card__top 
+                                    .p-voice-satisfaction-card__top__img: img(src="./assets/img/person7.jpg" alt="")
+                                    .p-voice-satisfaction-card__top__content
+                                        p.p-voice-satisfaction-card__company 株式会社P-Wedding 
+                                        p.p-voice-satisfaction-card__name 加藤 美玲
+                                        .p-voice-review-card-top__person__evaluation.satisfaction
+                                            .p-voice-review-card-top__person__evaluation__mark ★★★★<span>★</span>
+                                            .p-voice-review-card-top__person__evaluation__total 4.12
+                                            .p-voice-review-card-top__person__evaluation__number (20)
+                                .p-voice-satisfaction-card__under 
+                                    .p-voice-satisfaction-card__under__title プランナーへの口コミ 
+                                    p.p-voice-satisfaction-card__under__head 私らしい結婚式ができました！
+                                    p.p-voice-satisfaction-card__under__text 打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取りできました。
+                                .p-voice-satisfaction-card__top
+
+                                .p-voice-satisfaction-card__button 
+                                    a(href="").c-planner-button このプランナーページへ
+
+                            .p-voice-satisfaction-card 
+                                .p-voice-satisfaction-card__ribbon 
+                                    .c-ribbon-third No<br><span>03</span>
+                                .p-voice-satisfaction-card__top 
+                                    .p-voice-satisfaction-card__top__img: img(src="./assets/img/person5-2.jpg" alt="")
+                                    .p-voice-satisfaction-card__top__content
+                                        p.p-voice-satisfaction-card__company 株式会社P-Wedding 
+                                        p.p-voice-satisfaction-card__name 鈴木 直子
+                                        .p-voice-review-card-top__person__evaluation.satisfaction
+                                            .p-voice-review-card-top__person__evaluation__mark ★★★★<span>★</span>
+                                            .p-voice-review-card-top__person__evaluation__total 4.12
+                                            .p-voice-review-card-top__person__evaluation__number (20)
+                                .p-voice-satisfaction-card__under 
+                                    .p-voice-satisfaction-card__under__title プランナーへの口コミ 
+                                    p.p-voice-satisfaction-card__under__head 私らしい結婚式ができました！
+                                    p.p-voice-satisfaction-card__under__text 打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取りできました。
+                                .p-voice-satisfaction-card__top
+
+                                .p-voice-satisfaction-card__button 
+                                    a(href="").c-planner-button このプランナーページへ
+                        .p-voice__satisfaction__button 
+                            a(href="").c-show-button 口コミ一覧へ
+
+        section.p-instagram 
+            .l-inner
+                h2.c-section-title.p-reports__title <span class="c-section-title--icon"></span>Instagram<span class="c-section-title--after">インスタグラム</span> 
+                .p-instagram__content 
+                    .p-instagram__img 
+                        img(src="./assets/img/insta1.jpg" alt="")
+                    .p-instagram__img 
+                        img(src="./assets/img/insta2.jpg" alt="")
+                    .p-instagram__img 
+                        img(src="./assets/img/insta3.jpg" alt="")
+                    .p-instagram__img 
+                        img(src="./assets/img/insta4.jpg" alt="")
+                    .p-instagram__img 
+                        img(src="./assets/img/insta5.jpg" alt="")
+                    .p-instagram__img 
+                        img(src="./assets/img/insta6.jpg" alt="")
+                    .p-instagram__img 
+                        img(src="./assets/img/insta7.jpg" alt="")
+                    .p-instagram__img 
+                        img(src="./assets/img/insta8.jpg" alt="")
+        
+        footer.l-footer 
+            .l-inner
+                .l-footer__content
+                    .l-footer__content__top
+                        .l-footer__icons 
+                            h1.l-footer__logo: img(src="./assets/img/logo.png" alt="")
+                            .l-footer-sns
+                                p.l-footer__message Follow Me
+                                .p-footer-sns-icons
+                                    .l-footer-sns-icons__twitter
+                                        a(href=""): i.fa-brands.fa-twitter
+                                    .l-footer-sns-icons__instagram
+                                        a(href=""): i.fa-brands.fa-instagram
+                                    .l-footer-sns-icons__facebook
+                                        a(href=""): i.fa-brands.fa-square-facebook
+                                    .l-footer-sns-icons__line
+                                        a(href=""): i.fa-brands.fa-line
+
+                        .p-footer-menu
+                            ul.p-footer-menu__lists 
+                                li.p-footer-menu__top
+                                    ul.p-footer-menu__top__lists
+                                        li.p-footer-menu__top__list
+                                            a(href="").p-footer-menu__top__link プランナーを探す
+                                        li.p-footer-menu__top__list 
+                                            a(href="").p-footer-menu__top__link シンデレラレポ
+                                        li.p-footer-menu__top__list 
+                                            a(href="").p-footer-menu__top__link お気に入りレポート
+                                        li.p-footer-menu__top__list 
+                                            a(href="").p-footer-menu__top__link ログイン
+                                li.p-footer-menu__under
+                                    ul.p-footer-menu__under__lists
+                                        li.p-footer-menu__under__list 
+                                            a(href="").p-footer-menu__under__link 初めてご利用される方へ
+                                        li.p-footer-menu__under__list 
+                                            a(href="").p-footer-menu__under__link よくあるご質問
+                                        li.p-footer-menu__under__list 
+                                            a(href="").p-footer-menu__under__link お問い合わせ
+
+                    .l-footer__document
+                        ul.p-document
+                            li.p-document__list
+                                a(href="").p-document__link 運営会社
+                            li.p-document__list
+                                a(href="").p-document__link プライバシーポリシー
+                            li.p-document__list
+                                a(href="").p-document__link 利用規約
+            .l-footer__under 
+                p.l-footer__copyright &copy;Best Planner All rights reserved
+                p.l-footer__text 本サイト内は株式会社ウィザード様のご協力のもと作成したコーディング用の練習課題です。<br class="u-pc-display-none">実在の人物・団体とは関係ありません。
+                    
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js")
+        script(src="./assets/js/script.js")

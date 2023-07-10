@@ -1,0 +1,59 @@
+@use "../global" as global;
+
+.p-mv-menu {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include global.mq(tb) {
+        width: 80px;
+    }
+
+    @include global.mq(sp) {
+        display: none;
+    }
+}
+
+.p-mv-menu__list {
+    height: 100px;
+    background-color: global.$color4;
+    text-align: center;
+    border: 1px solid global.$main-color2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @include global.mq(tb) {
+        height: 80px;
+    }
+
+
+    &:first-child {
+        display: block;
+    }
+
+    &:nth-child(3) {
+        img {
+            padding-right: 8px;
+        }
+    }
+}
+
+.p-mv-menu__link {
+    color: global.$main-color1;
+}
+
+.mv-menu__list-head {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: global.$fw-regular;
+    font-family: global.$ff-noto;
+
+    @include global.mq(tb) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}

@@ -1,0 +1,112 @@
+@use "../global" as global;
+
+.p-voice {
+    padding: 73px 100px 64px 100px;
+
+    @include global.mq(tb) {
+        padding: 73px 40px 64px 40px;
+    }
+
+    @include global.mq(sp) {
+        padding: 64px 16px;
+    }
+}
+
+.p-voice__content {
+    background: #C8C8C8;
+    padding: 24px 0 64px 0;
+    margin-top: 24px;
+}
+
+.p-voice__review__content {
+    position: relative;
+}
+
+.p-voice__review__wrapper {
+    display: flex;
+    overflow-x: scroll;
+    gap: 24px;
+    position: relative;
+    /* IE, Edge 対応 */
+    -ms-overflow-style: none;
+    /* Firefox 対応 */
+    scrollbar-width: none;
+    /* Chrome, Safari 対応 */
+    &::-webkit-scrollbar {
+        display:none;
+    }
+}
+
+.p-voice__review__prev {
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    transform: translateY(-50%);
+    z-index: global.$prev-next;
+
+    @include global.mq(sp) {
+        left: 0;
+    }
+}
+
+.p-voice__review__next {
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+    z-index: global.$prev-next;
+
+    @include global.mq(sp) {
+        right: 0;
+    }
+}
+
+.p-voice__satisfaction {
+    padding: 36px 42px 0 42px;
+
+    @include global.mq(tb) {
+        padding: 36px 0 0 0;
+        overflow-x: scroll;
+        /* IE, Edge 対応 */
+        -ms-overflow-style: none;
+        /* Firefox 対応 */
+        scrollbar-width: none;
+        /* Chrome, Safari 対応 */
+        &::-webkit-scrollbar {
+            display:none;
+        }
+    }
+
+    @include global.mq(sp) {
+        padding: 42px 0 0 0;
+    }
+}
+
+.p-voice__satisfaction__content {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+
+    @include global.mq(sp) {
+        display: flex;
+        gap: 16px;
+        overflow-x: scroll;
+        /* IE, Edge 対応 */ 
+        -ms-overflow-style: none;
+        /* Firefox 対応 */
+        scrollbar-width: none;
+        /* Chrome, Safari 対応 */ 
+        &::-webkit-scrollbar { 
+            display:none; 
+        }
+    }
+}
+
+.p-voice__satisfaction__button {
+    margin-top: 64px;
+    text-align: center;
+
+    @include global.mq(sp) {
+        margin-top: 48px;
+    }
+}

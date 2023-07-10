@@ -1,0 +1,49 @@
+@use "../global" as global;  
+
+.c-planner-button {
+    width: 201px;
+    font-size: 14px;
+    line-height: 21px;
+    color: global.$main-color1;
+    letter-spacing: 0.01em;
+    font-weight: global.$fw-regular;
+    font-family: global.$ff-noto;
+    padding-bottom: 4px;
+    border-bottom: 1px solid global.$main-color1;
+    padding-left: 2px;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 20px;
+        border-bottom: 1px solid global.$main-color1;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+        @include global.mq(sp) {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: "";
+        width: 10px;
+        height: 1px;
+        border-bottom: 1px solid global.$main-color1;
+        position: absolute;
+        right: 0;
+        top: calc(50% - 2px);
+        transform: translateY(-50%) rotate(30deg);
+
+        @include global.mq(sp) {
+            width: 28px;
+            top: auto;
+            right: -1px;
+            bottom: 5px;
+        }
+    }
+}
+

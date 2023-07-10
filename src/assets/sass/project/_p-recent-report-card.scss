@@ -1,0 +1,147 @@
+@use "../global" as global;
+
+.p-recent-report-card {
+    width: 416px;
+    padding: 24px;
+    background-color: global.$color4;
+    position: relative;
+
+    @include global.mq(sp) {
+        min-width: 294px;
+        padding: 21px 17px 26px 17px;
+    }
+
+    &::after {
+        content: "";
+        width: calc(100% - 24px);
+        height: calc(100% - 24px); 
+        border: 1px solid global.$main-color2;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+
+        @include global.mq(sp) {
+            width: calc(100% - 16px);
+            height: calc(100% - 22px);
+            top: 11px;
+            left: 8px;
+        }
+    }
+}
+
+.p-recent-report-card__mark {
+    position: absolute;
+    top: 36px;
+    right: 36px;
+    z-index: 2;
+    cursor: pointer;
+
+    @include global.mq(sp) {
+        top: 29px;
+        right: 25px;
+    }
+
+    &:active {
+        .c-heart-mark {
+            font-size: 0;
+
+            &::before {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.p-recent-report-card__img {
+    width: 368px;
+
+    @include global.mq(sp) {
+        width: 260px;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.p-recent-report-card__content {
+    width: 332px;
+    padding: 14px;
+    margin: -44px auto 0 auto;
+    padding-bottom: 6px;
+    background-color: rgb(255, 255, 255, 0.88);
+    position: relative;
+    z-index: 2;
+
+    @include global.mq(sp) {
+        width: 246px;
+        padding-bottom: 0;
+    }
+}
+
+.p-recent-report-card__head {
+    font-size: 18px;
+    line-height: 27px;
+    font-family: global.$ff-noto;
+    color: global.$color5;
+    border-bottom: 1px solid global.$main-color1; 
+    font-weight: global.$fw-regular;
+    padding-bottom: 8px;
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 6px;
+    }
+}
+
+.p-recent-report-card__under {
+    margin-top: 6px;
+}
+
+.p-recent-report-card__categories {
+    @include global.categories(10px ,15px, global.$tag-color3);
+
+    &.color2 {
+        @include global.categories(10px, 15px, global.$tag-color2);
+    }
+}
+
+.p-recent-report-card__area-box {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.p-recent-report-card__area {
+    font-size: 12px;
+    line-height: 18px;
+    color: global.$color5;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    display: inline-block;
+    margin-left: 9px;
+}
+
+.p-recent-report-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 6px;
+    column-gap: 6px;
+    margin-top: 8px;
+}
+
+.p-recent-report-card__tag__link {
+    @include global.tag;
+}
+
+.p-recent-report-card__more {
+    width: 135px;
+    margin: 17px 0 0 auto;
+    display: none;
+
+    @include global.mq(sp) {
+        display: block;
+    }
+}

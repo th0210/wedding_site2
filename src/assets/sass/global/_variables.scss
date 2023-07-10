@@ -1,0 +1,52 @@
+//色
+$main-color1: #757676;
+$main-color2: #84D6D6;
+$main-bg-color: #EEF9F8;
+$color4: #FFFFFF;
+$color5: #000000;
+
+$tag-color1: #D684B8;
+$tag-color2: #F1B04E;
+$tag-color3: #ABD07B;
+$tag-color4: #84B6D6;
+$tag-color5: #D6BF84;
+
+$rank-color1: #C99700;
+$rank-color2: #C4C4C4;
+$rank-color3: #BA6E40;
+
+//フォント
+$ff-yu: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+$ff-noto: "Noto Sans JP", sans-serif;
+$ff-en: "Hind", sans-serif;
+
+//フォントウェイト
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-black: 900;
+
+//レイアウト
+$inner-width: 1440px;
+
+//ブレークポイント
+$breakpoints: (
+  "sp": "screen and (max-width: 599px)",
+  "tb": "screen and (min-width: 600px) and (max-width: 1024px)",
+  "pc": "screen and (min-width: 1025px)"
+);
+
+//重なり順(z-indexの値)
+$prev-next: 5;
+$header: 10;
+$header-close: 11;
+$drawer: 20;
+$drawer-close: 21;
+$default: 1;
+
+
+
+
+
+

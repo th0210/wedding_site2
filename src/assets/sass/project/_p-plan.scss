@@ -1,0 +1,48 @@
+@use "../global" as global;
+
+.p-plan {
+    padding: 73px 6.6% 63px 6.6%;
+    background: url(../img/bg.png) no-repeat center center/cover;
+
+    @include global.mq(tb) {
+        padding: 64px 40px 73px 40px;
+    }
+
+    @include global.mq(sp) {
+        padding: 64px 16px 73px 16px;
+    }
+}
+
+.p-plan__content {
+    margin-top: 64px;
+    padding: 59px 34px 39px 34px;
+    background: global.$main-bg-color;
+
+    @include global.mq(sp) {
+        padding: 38px 17px 25px 28px;
+    }
+}
+
+.p-plan__content__low1,
+.p-plan__content__low2 {
+    display: flex;
+    justify-content: center;
+
+    @include global.mq(sp) {
+        display: block;
+    }
+}
+
+.p-plan__content__low1 {
+    column-gap: 70px;
+    row-gap: 42px;
+    flex-wrap: wrap;
+}
+
+.p-plan__content__low2 {
+    margin-top: 42px;
+    column-gap: 81px;
+    row-gap: 42px;
+    flex-wrap: wrap;
+}
+

@@ -1,0 +1,8 @@
+@use "../global" as global;
+
+.c-arrow {
+    width: 20px;
+    height: 20px;
+    border-top: 1px solid global.$main-color1;
+    border-left: 1px solid global.$main-color1;
+}

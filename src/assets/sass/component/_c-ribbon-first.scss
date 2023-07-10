@@ -1,0 +1,5 @@
+@use "../global" as global;
+
+.c-ribbon-first {
+    @include global.ribbon(global.$rank-color1);
+}

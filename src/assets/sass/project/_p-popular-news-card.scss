@@ -1,0 +1,23 @@
+@use "../global" as global;
+
+.p-popular-news-card {
+    background: global.$color4;
+    padding: 20px 23px 30px 23px;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: calc(100% - 26px);
+        height: calc(100% - 23px);
+        border: 1px solid global.$main-color2;
+        position: absolute;
+        top: 9px;
+        left: 13px;
+    }
+}
+
+.p-popular-news-card__mark {
+    position: absolute;
+    top: 27px;
+    right: 36px;
+}

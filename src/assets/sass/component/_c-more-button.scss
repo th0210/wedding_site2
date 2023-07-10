@@ -1,0 +1,27 @@
+@use "../global" as global;
+
+.c-more-button {
+    width: 135px;
+    font-size: 16px;
+    line-height: 22px;
+    color: global.$main-color1;
+    letter-spacing: 0.01em;
+    font-weight: global.$fw-medium;
+    font-family: global.$ff-en;
+    padding-bottom: 3px;
+    border-bottom: 1px solid global.$main-color1;
+    padding-left: 2px;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 19px;
+        height: 1px;
+        border-bottom: 1px solid global.$main-color1;
+        position: absolute;
+        right: 0;
+        bottom: 4px;
+        transform: rotate(30deg);
+    }
+}

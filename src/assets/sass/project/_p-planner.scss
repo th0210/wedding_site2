@@ -1,0 +1,179 @@
+@use "../global" as global;
+
+.p-planner {
+    background: global.$color4;
+    padding: 73px 100px 66px 100px;
+
+    @include global.mq(tb) {
+        padding: 73px 0 66px 0;
+    }
+
+    @include global.mq(sp) {
+        padding: 64px 0 128px 0;
+    }
+}
+
+.p-planner__title {
+    @include global.mq(tb) {
+        margin-left: 40px;
+    }
+
+    @include global.mq(sp) {
+        margin-left: 16px;
+    }
+}
+
+.p-planner__subtitle {
+    @include global.mq(tb) {
+        margin-left: 40px;
+    }
+
+
+    @include global.mq(sp) {
+        margin-left: 16px;
+    }
+}
+
+.p-planner__rank {
+    margin-top: 32px;
+
+    @include global.mq(sp) {
+        padding-left: 16px;
+    }
+}
+
+.p-planner__rank__content {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    margin-top: 34px;
+
+    @include global.mq(tb) {
+        display: flex;
+        padding-left: 40px;
+        position: relative;
+        overflow-x: scroll;
+        /* IE, Edge 対応 */ 
+        -ms-overflow-style: none;
+        /* Firefox 対応 */
+        scrollbar-width: none;
+        /* Chrome, Safari 対応 */ 
+        &::-webkit-scrollbar { 
+            display:none; 
+        }
+    }
+
+    @include global.mq(sp) {
+        display: flex;
+        margin-top: 24px;
+        position: relative;
+        overflow-x: scroll;
+        /* IE, Edge 対応 */ 
+        -ms-overflow-style: none;
+        /* Firefox 対応 */
+        scrollbar-width: none;
+        /* Chrome, Safari 対応 */ 
+        &::-webkit-scrollbar { 
+            display:none; 
+        }
+    }
+}
+
+.p-planner__rank__prev {
+    display: none;
+
+    @include global.mq(tb) {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 58px;
+        transform: translateY(-50%);
+        z-index: global.$prev-next;
+    }
+
+    @include global.mq(sp) {
+        display: block;
+        position: absolute;
+        top: 38%;
+        left: 3px;
+        z-index: global.$prev-next;
+    }
+}
+
+.p-planner__rank__next {
+    display: none;
+
+    @include global.mq(tb) {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        transform: translateY(-50%);
+        z-index: global.$prev-next;
+    }  
+
+    @include global.mq(sp) {
+        display: block;
+        position: absolute;
+        top: 38%;
+        right: 18px;
+        z-index: global.$prev-next;
+    }  
+}
+
+.p-planner__new {
+    margin-top: 64px;
+    background: global.$color4;
+
+    @include global.mq(sp) {
+        margin-top: 51px;
+    }
+}
+
+.p-planner__new__content {
+    position: relative;
+}
+
+.p-planner__new__wrapper {
+    margin-top: 32px;
+    background: global.$main-bg-color;
+    padding: 49px 0 43px 0;
+    display: flex;
+    position: relative;
+    gap: 35px;
+    overflow-x: scroll;
+     /* IE, Edge 対応 */
+    -ms-overflow-style: none;
+    /* Firefox 対応 */
+    scrollbar-width: none;
+    /* Chrome, Safari 対応 */
+    &::-webkit-scrollbar {
+        display:none;
+    }
+
+    @include global.mq(sp) {
+        margin-top: 25px;
+        padding: 48px 0 48px 16px;
+    }
+}
+
+.p-planner__new__prev {
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    transform: translateY(-50%);
+    z-index: global.$prev-next;
+}
+
+.p-planner__new__next {
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    transform: translateY(-50%);
+    z-index: global.$prev-next;
+}
+
+.p-planner__button {
+    margin-top: 64px;
+    text-align: center;
+}

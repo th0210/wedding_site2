@@ -1,0 +1,126 @@
+@use "./variables" as global;
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: sp) {
+//map-get(マップ型変数, キー)で値を取得
+  @media #{map-get(global.$breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+  }
+}
+
+@mixin mv-button($bg-color) {
+    width: 400px;
+    color: global.$color4;
+    font-weight: global.$fw-medium;
+    line-height: 24px;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 0.008em;
+    background: $bg-color;
+    padding: 23px 130px;
+    position: relative;
+
+    &::before {
+      content: "";
+       width: calc(100% - 32px);
+       height: calc(100% - 30px);
+       border: 1px solid global.$color4;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    }
+}
+
+@mixin section-title {
+  font-size: 30px;
+  color: global.$main-color1;
+  font-family: global.$ff-en;
+  font-weight: global.$fw-medium;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+@mixin tag {
+  font-size: 12px;
+  color: global.$color4;
+  font-family: global.$ff-yu;
+  font-weight: global.$fw-medium;
+  padding: 2px 6px 2px 6px;
+  background-color: global.$main-color2;
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 45px;
+}
+
+@mixin categories($font-size, $line-height, $bg-color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: global.$color4;
+  background-color: $bg-color;
+  padding: 2px 8px;
+  display: inline-block;
+  font-family: global.$ff-yu;
+  font-weight: global.$fw-medium;
+}
+
+@mixin ribbon($bg-color) {
+  width: 46px;
+  height: 45px;
+  font-size: 12px;
+  color: global.$color4;
+  font-family: global.$ff-noto;
+  font-weight: global.$fw-regular;
+  text-align: center;
+  background: $bg-color;
+  display: inline-block;
+  position: relative;
+
+  span {
+      font-size: 20px;
+      color: global.$color4;
+      line-height: 1.3;
+      font-family: global.$ff-noto;
+      font-weight: global.$fw-regular;
+      text-align: center;
+      background: $bg-color;
+  }
+
+  &::before {
+      content: "";
+      border-top: 16px solid $bg-color;
+      border-right: 23px solid transparent;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+  }
+
+  &::after {
+      content: "";
+      border-top: 16px solid $bg-color;
+      border-left: 23px solid transparent;
+      position: absolute;
+      bottom: -15px;
+      right: 0;
+  }
+}
+
+@mixin c-scroll($rgb1, $rgb2, $rgb3, $opacity, $opacity-i) {
+  width: 40px;
+  height: 40px;
+  background: rgb($rgb1, $rgb2, $rgb3, $opacity);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  i {
+    font-size: 16px;
+    color: global.$color4;
+    opacity: $opacity-i;
+  }
+}

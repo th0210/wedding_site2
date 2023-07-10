@@ -1,0 +1,181 @@
+@use "../global" as global; 
+
+.p-about {
+    padding: 73px 0 64px 0;
+    background: global.$color4;
+
+    @include global.mq(sp) {
+        padding: 64px 0 0 0;
+    }
+}
+
+.p-about__content {
+    text-align: center;
+    margin-top: 76px;
+    background: url(../img/about1.png) no-repeat top 190px right 0 / 1047px 565px;
+
+    @include global.mq(tb) {
+       margin: 76px 40px 0 40px;
+    }
+
+    @include global.mq(sp) {
+        margin-top: 45px;
+        padding: 0 16px;
+        background: url(../img/about1.png) no-repeat bottom 211px right -17px / 398px 215px;
+    }
+}
+
+.p-about__head {
+    font-size: 36px;
+    color: #202020;
+    font-family: global.$ff-noto;
+    font-weight: global.$fw-regular;
+    line-height: 60px;
+    letter-spacing: 0.01em;
+
+    @include global.mq(tb) {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    @include global.mq(sp) {
+        font-size: 21px;
+        line-height: 40px;
+    }
+
+    span {
+        font-size: 48px;
+        color: global.$main-color2;
+        font-family: global.$ff-noto;
+        font-weight: global.$fw-regular;
+        line-height: 60px;
+        letter-spacing: 0.01em;
+
+        @include global.mq(tb) {
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        @include global.mq(sp) {
+            font-size: 33px;
+            line-height: 40px;
+        }
+    }
+}
+
+.p-about__text {
+    font-size: 18px;
+    color: #202020;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    line-height: 40px;
+    letter-spacing: 0.005em;
+    margin-top: 56px;
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+
+.p-about__message {
+    font-size: 20px;
+    color: global.$main-color2;
+    line-height: 30px;
+    letter-spacing: 0.008em;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    margin-top: 54px;
+    display: inline-block;
+    position: relative;
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &::before {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: global.$main-color2;
+        position: absolute;
+        left: -56px;
+        bottom: 13px;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: global.$main-color2;
+        position: absolute;
+        right: -56px;
+        bottom: 13px;
+        transform: rotate(-45deg);
+    }
+}
+
+.p-about__button {
+    margin-top: 8px;
+}
+
+.p-about__persons {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    margin-top: 54px;
+
+    @include global.mq(sp) {
+        margin-top: 48px;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+
+        &:first-child {
+            animation: loop 60s -30s linear infinite;
+        }
+
+        &:last-child {
+            animation: loop2 60s linear infinite;
+        }
+    }
+}
+
+@keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes loop2 {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+
+.p-about__img {
+    min-width: 235px;
+
+    @include global.mq(tb) {
+        min-width: 186px;
+    }
+
+    @include global.mq(sp) {
+        min-width: 110px;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}

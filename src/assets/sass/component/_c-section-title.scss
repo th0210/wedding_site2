@@ -1,0 +1,102 @@
+@use "../global" as global;
+
+.c-section-title {
+    @include global.section-title;
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        color: global.$main-color1;
+        font-family: global.$ff-en;
+        font-weight: global.$fw-medium;
+        line-height: 1;
+        letter-spacing: 0.01em;
+        display: inline-block;
+        position: relative;
+    }
+
+    &.recent,
+    &.about,
+    &.popular {
+        margin-left: 100px;
+
+        @include global.mq(tb) {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        @include global.mq(sp) {
+            margin-left: 0;
+        }
+    }
+
+    &.about {
+        @include global.mq(sp) {
+            margin-left: 16px;
+        }
+    }
+}
+
+.c-section-title--icon {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-color: global.$main-color2;
+    margin-bottom: 4px;
+    margin-right: -17px;
+
+    @include global.mq(sp) {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 5px;
+        margin-right: -10px;
+    }
+}
+
+.c-section-title--after {
+    font-size: 20px;
+    color: global.$color5;
+    line-height: 30px;
+    font-weight: global.$fw-regular;
+    font-family: global.$ff-noto;
+    padding-left: 48px;
+    position: relative;
+
+    @include global.mq(tb) {
+        display: block;
+        margin-top: 4px;
+        padding: 10px 0 0 20px;
+    }
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        line-height: 24px;
+        display: block;
+        margin-top: 4px;
+        padding: 4px 0 0 10px;
+    }
+
+    &::before {
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: global.$main-color2;
+        position: absolute;
+        top: 0;
+        left: 24px;
+
+        @include global.mq(tb) {
+            width: 44px;
+            height: 0;
+            left: 20px;
+            border: 1px solid global.$main-color2;
+        }
+
+        @include global.mq(sp) {
+            width: 44px;
+            height: 0;
+            left: 10px;
+            border: 1px solid global.$main-color2;
+            
+        }
+    }
+}

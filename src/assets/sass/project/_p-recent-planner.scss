@@ -1,0 +1,59 @@
+@use "../global" as global;
+
+.p-recent-planner {
+    margin-top: 64px;
+
+    @include global.mq(sp) {
+        margin-top: 24px;
+    }
+}
+
+.p-recent-planner__cards {
+    position: relative;
+}
+
+.p-recent-planner__cards__wrapper {
+    display: flex;
+    column-gap: 48px;
+    flex-wrap: nowrap;
+    margin-top: 24px;
+    position: relative;
+    overflow-x: scroll;
+     /* IE, Edge 対応 */
+    -ms-overflow-style: none;
+    /* Firefox 対応 */
+    scrollbar-width: none;
+/* Chrome, Safari 対応 */
+    &::-webkit-scrollbar {
+        display:none;
+    }
+
+    @include global.mq(sp) {
+        column-gap: 19px;
+    }
+}
+
+.p-recent-planner__prev {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    z-index: global.$prev-next;
+
+    @include global.mq(sp) {
+        left: auto;
+        right: 30px;
+    }
+}
+
+.p-recent-planner__next {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    z-index: global.$prev-next;
+
+    @include global.mq(sp) {
+        display: none;
+    }
+}

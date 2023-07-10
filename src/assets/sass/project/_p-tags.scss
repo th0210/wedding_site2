@@ -1,0 +1,33 @@
+@use "../global" as global;
+
+.p-tags {
+    background: global.$main-bg-color;
+    padding: 73px 100px 128px 100px;
+
+    @include global.mq(tb) {
+        padding: 73px 40px 128px 40px;
+    }
+
+    @include global.mq(sp) {
+        padding: 104px 24px 72px 24px;
+    }
+}
+
+.p-tags__content {
+    background: global.$color4;
+    display: flex;
+    margin-top: 64px;
+    /*padding: 36px 90px 22px 90px;*/
+    padding: 36px 0 22px 0;
+
+    @include global.mq(tb) {
+        padding: 36px 0;
+        display: block;
+    }
+
+    @include global.mq(sp) {
+        margin-top: 25px;
+        display: block;
+        padding: 48px 24px;
+    }
+}

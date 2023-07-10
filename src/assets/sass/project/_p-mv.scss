@@ -1,0 +1,33 @@
+@use "../global" as global;
+
+.p-mv {
+    height: 791px;
+    background: url(../img/mv.jpg) no-repeat center center/cover;
+    position: relative;
+
+    @include global.mq(sp) {
+        height: 414px + 59px;
+    }
+}
+
+.p-mv__inner {
+    height: inherit;
+    position: relative;
+}
+
+.p-mv__buttons {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: -65px;
+
+    @include global.mq(tb) {
+        width: 100%;
+    }
+
+    @include global.mq(sp) {
+        width: 100%;
+        top: 100%;
+        bottom: auto;
+    }
+}

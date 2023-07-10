@@ -1,0 +1,202 @@
+@use "../global" as global; 
+
+.p-drawer {
+    width: 100%;
+    height: 100vh;
+    background: global.$color4;
+    border: 30px solid global.$main-bg-color;
+    padding-bottom: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: global.$drawer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @include global.mq(tb) {
+        border-top: 20px solid global.$main-bg-color;
+        border-bottom: 20px solid global.$main-bg-color;
+        border-right: 20px solid global.$main-bg-color;
+        border-left: 20px solid global.$main-bg-color;
+        padding: 25px 0 26px 0;
+    }
+
+    @include global.mq(sp) {
+        border-top: 8px solid global.$main-bg-color;
+        border-bottom: 8px solid global.$main-bg-color;
+        border-right: 8px solid global.$main-bg-color;
+        border-left: 8px solid global.$main-bg-color;
+        padding: 25px 0 26px 0;
+    }
+}
+
+.p-drawer__inner {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.p-drawer__button {
+    height: 56px;
+    cursor: pointer;
+    position: absolute;
+    top: 56px;
+    right: 56px;
+    z-index: global.$drawer-close;
+    transition: 0.5s;
+
+    @include global.mq(tb) {
+        top: 32px;
+        right: 32px;
+    }
+
+    @include global.mq(sp) {
+        display: none;
+    }
+}
+
+.drawer-logo {
+    width: 302px;
+    height: 218px;
+    margin-top: -50px;
+
+    @include global.mq(tb) {
+        margin-top: -60px;
+    }
+
+    @include global.mq(sp) {
+        width: 154px;
+        height: 54px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+
+        @include global.mq(sp) {
+            object-fit: cover;
+        }
+    }
+}
+
+.p-drawer-menu {
+    display: flex;
+    margin-top: 24px;
+    padding: 0 172px;
+    height: 70%; 
+    margin: 0 auto;
+
+    @include global.mq(tb) {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+
+    @include global.mq(sp) {
+        width: 264px;
+        display: block;
+        padding: 0;
+        margin: 25px auto 0 auto;
+        height: auto;
+    }
+}
+
+.p-drawer-menu__list {
+    margin-top: 32px;
+
+    @include global.mq(sp) {
+        margin-top: 24px;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.p-drawer-menu__link {
+    font-size: 24px;
+    color: global.$color5;
+    line-height: 36px;
+    font-weight: global.$fw-regular;
+    font-family: global.$ff-noto;
+
+    @include global.mq(tb) {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    @include global.mq(sp) {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+.p-drawer-menu__button {
+    margin-top: 36px;
+}
+
+.p-drawer-menu__left {
+    width: 100%;
+    padding-right: 91px;
+
+    @include global.mq(tb) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @include global.mq(sp) {
+        padding-right: 0;
+    }
+}
+
+.p-drawer-menu__right {
+    width: 100%;
+    border-left: 1px solid global.$main-color1;
+    padding-left: 91px;
+
+    @include global.mq(tb) {
+        padding: 0 40px;
+    }
+
+
+    @include global.mq(sp) {
+        padding-left: 0;
+        border-left: none;
+        margin-top: 24px;
+    }
+}
+
+.p-drawer-menu__documents {
+    margin: 35px 170px 0 0;
+
+    @include global.mq(tb) {
+        margin: 45px 0 0 0;
+    }
+
+    @include global.mq(sp) {
+        margin: 17px auto 0 auto;
+    }
+}
+
+.p-drawer-menu__arrow {
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+
+    @include global.mq(tb) {
+        display: none;
+    }
+
+    @include global.mq(sp) {
+        display: none;
+    }
+}

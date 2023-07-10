@@ -1,0 +1,33 @@
+@use "../global" as global;
+
+.p-voice-review-card-sp {
+    margin-top: 25px;
+    padding: 16px 12px;
+    width: 358px;
+    min-width: 358px;
+    background: global.$color4;
+    position: relative;
+    display: none;
+
+    @include global.mq(sp) {
+        display: block;
+    }
+}
+
+.p-voice-review-card-sp__flex {
+    display: flex;
+}
+
+.p-voice-review-card-sp__img {
+    min-width: 125px;
+    height: 144px;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.p-voice-review-card-sp__content {
+    margin-left: 10px;
+}

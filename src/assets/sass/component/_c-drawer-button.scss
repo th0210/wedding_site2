@@ -1,0 +1,29 @@
+@use "../global" as global;
+
+.c-drawer-button {
+    width: 56px;
+    height: 56px;
+    background: global.$main-color2;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 55px;
+        border-bottom: 1px solid global.$color4;
+        position: absolute;
+        top: 50%;
+        left: 1px;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        content: "";
+        width: 55px;
+        border-bottom: 1px solid global.$color4;
+        position: absolute;
+        top: 50%;
+        left: 1px;
+        transform: rotate(-45deg);
+    }
+}

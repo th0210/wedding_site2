@@ -1,0 +1,54 @@
+@use "../global" as global;
+
+.p-card-person {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 19px;
+        height: 19px;
+        background: global.$main-color2;
+        display: inline-block;
+        position: absolute;
+        top: -4px;
+        left: -7px;
+    }
+}
+
+.p-card-person__img {
+    width: 68px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.p-card-person__content  {
+    margin-left: 16px;
+}
+
+.p-card-person__head {
+    font-size: 10px;
+    color: global.$main-color1;
+    line-height: 15px;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+}
+
+.p-card-person__name {
+    font-size: 16px;
+    line-height: 24px;
+    color: global.$color5;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+}
+
+.p-card-person__company {
+    font-size: 12px;
+    line-height: 18px;
+    color: global.$color5;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+}

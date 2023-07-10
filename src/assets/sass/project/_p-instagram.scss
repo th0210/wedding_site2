@@ -1,0 +1,52 @@
+@use "../global" as global;
+
+.p-instagram {
+    padding: 73px 140px 74px 118px;
+    background: url(../img/bg.png) no-repeat center center / contain;
+
+    @include global.mq(tb) {
+        padding: 73px 40px 74px 40px;
+    }
+
+    @include global.mq(sp) {
+        padding: 64px 39px;
+    }
+}
+
+.p-instagram__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 64px;
+    column-gap: 40px;
+    row-gap: 38px;
+
+    @include global.mq(tb) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include global.mq(sp) {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 19px;
+        column-gap: 24px;
+        row-gap: 16px; 
+    }
+}
+
+.p-instagram__img {
+
+    &:nth-child(4),
+    &:last-child {
+        @include global.mq(tb) {
+            display: none;
+        }
+
+        @include global.mq(sp) {
+            display: none;
+        }
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}

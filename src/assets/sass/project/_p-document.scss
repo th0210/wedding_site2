@@ -1,0 +1,25 @@
+@use "../global" as global;
+
+.p-document {
+    display: flex;
+    justify-content: right;
+    gap: 24px;
+
+    @include global.mq(tb) {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    @include global.mq(sp) {
+        gap: 16px;
+        justify-content: center;
+    }
+}
+
+.p-document__link {
+    font-size: 14px;
+    font-family: global.$ff-noto;
+    line-height: 21px;
+    font-weight: global.$fw-regular;
+    color: global.$color5;
+}

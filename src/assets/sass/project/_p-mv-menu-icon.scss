@@ -1,0 +1,105 @@
+@use "../global" as global;
+
+.p-mv-menu-icon {
+    width: 100px;
+    height: 100px;
+    background: global.$main-color2;
+    position: relative;
+    transition: 0.5s;
+
+    @include global.mq(tb) {
+        width: 80px;
+        height: 80px;
+    }
+
+    @include global.mq(sp) {
+        width: 59px;
+        height: 59px;
+    }
+
+    &.is-open {
+        @include global.mq(sp) {
+            width: 46px;
+            height: 46px;
+        }
+    }
+}
+
+.p-mv-menu-icon__bar1,
+.p-mv-menu-icon__bar2,
+.p-mv-menu-icon__bar3 {
+    width: 34px;
+    height: 2px;
+    background: global.$color4;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+
+    @include global.mq(tb) {
+        width: 28px;
+        height: 1px;
+    }
+
+    @include global.mq(sp) {
+        width: 20px;
+        height: 1px;
+    }
+}
+
+.p-mv-menu-icon__bar1 {
+    top: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include global.mq(tb) {
+        top: 30px;
+    }
+
+    @include global.mq(sp) {
+        top: 22px;
+    }
+
+    &.is-open {
+        @include global.mq(sp) {
+            width: 40px;
+            top: 22px;
+            transform: translateX(-50%) rotate(45deg);
+        }
+    }
+}
+
+.p-mv-menu-icon__bar2 {
+    height: 1px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &.is-open {
+        @include global.mq(sp) {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+
+.p-mv-menu-icon__bar3 {
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include global.mq(tb) {
+        bottom: 30px;
+    }
+
+    @include global.mq(sp) {
+        bottom: 22px;
+    }
+
+    &.is-open {
+        @include global.mq(sp) {
+            width: 40px;
+            top: 22px;
+            transform: translateX(-50%) rotate(-45deg);
+        }
+    }
+}

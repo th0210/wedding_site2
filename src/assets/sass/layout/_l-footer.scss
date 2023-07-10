@@ -1,0 +1,176 @@
+@use "../global" as global;
+
+.l-footer {
+    padding-top: 48px;
+    background: #F7F7F7;
+}
+
+.l-footer__content__top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid global.$main-color1;
+    padding: 0 100px 65px 100px;
+    position: relative;
+
+    @include global.mq(tb) {
+        justify-content: center;
+        gap: 61px;
+        padding: 0 0 48px 0;
+        margin: 0 40px;
+    }
+
+    @include global.mq(sp) {
+        justify-content: center;
+        gap: 61px;
+        padding: 0 0 48px 0;
+        border-bottom: none;
+    }
+
+    &::before {
+        content: "";
+        width: 72%;
+        border-bottom: 1px solid global.$main-color1;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+
+        @include global.mq(sp) {
+            display: block;
+        }
+    }
+}
+
+.l-footer__icons {
+    padding-left: 60px;
+
+    @include global.mq(tb) {
+        padding-left: 0;
+    }
+
+    @include global.mq(sp) {
+        padding-left: 0;
+    }
+}
+
+.l-footer__logo {
+    width: 229px;
+    height: 119px;
+
+    @include global.mq(sp) {
+        width: 116px;
+        height: 32px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.l-footer-sns {
+    margin-top: 22px;
+    text-align: center;
+
+    @include global.mq(sp) {
+        margin-top: 32px;
+    }
+}
+
+.l-footer__message {
+    font-size: 16px;
+    font-family: global.$ff-en;
+    line-height: 22px;
+    font-weight: global.$fw-regular;
+    color: global.$main-color1;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+    @include global.mq(sp) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &::before {
+        content: "";
+        width: 21px;
+        border-bottom: 1px solid global.$main-color1;
+        transform: rotate(45deg);
+        position: absolute;
+        left: -24px;
+        top: 8px;
+
+        @include global.mq(sp) {
+            width: 16px;
+            top: 5px;
+        }
+    }
+
+    &::after {
+        content: "";
+        width: 21px;
+        border-bottom: 1px solid global.$main-color1;
+        transform: rotate(-45deg);
+        position: absolute;
+        right: -24px;
+        top: 8px;
+
+        @include global.mq(sp) {
+            width: 16px;
+            top: 5px;
+        }
+    }
+}
+
+.l-footer__document {
+    padding: 24px 167px 24px 100px;
+
+    @include global.mq(tb) {
+        padding: 24px 40px;
+    }
+
+    @include global.mq(sp) {
+        padding: 16px 0;
+    }
+}
+
+.l-footer__under {
+    padding: 9px 0;
+    background: global.$main-color2;
+}
+
+.l-footer__copyright {
+    font-size: 12px;
+    font-family: global.$ff-en;
+    line-height: 16px;
+    font-weight: global.$fw-regular;
+    color: global.$color4;
+    letter-spacing: 0.01em;
+    text-align: center;
+
+    @include global.mq(sp) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+.l-footer__text {
+    font-size: 10px;
+    font-family: global.$ff-en;
+    line-height: 14px;
+    font-weight: global.$fw-regular;
+    color: global.$color4;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-top: 8px;
+
+    @include global.mq(sp) {
+        font-size: 7px;
+        line-height: 10px;
+    }
+}

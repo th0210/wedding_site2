@@ -1,0 +1,94 @@
+@use "../global" as global; 
+
+.p-drawer-plan {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: global.$drawer;
+    transition: 0.5s;
+
+    &.is-open {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.p-drawer-plan__bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.p-drawer-plan__content {
+    width: 750px;
+    height: 302px;
+    background: global.$color4;
+    padding: 25px 62px 37px 62px;
+    border: 1px solid global.$main-color1;
+    z-index: global.$drawer-close;
+}
+
+.p-drawer-plan__lists {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 12px;
+    column-gap: 75px;
+}
+
+.p-drawer-plan__list {
+    width: 276px;
+    height: 64px;
+    box-sizing: content-box;
+    padding-bottom: 12px;
+    border-bottom: 1px solid global.$main-color1;
+    cursor: pointer;
+    position: relative;
+
+    &:nth-child(3),
+    &:last-child {
+        border: none;
+    }
+}
+
+.p-drawer-plan__arrow {
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+
+.p-drawer-plan__link {
+    display: flex;
+    align-items: center;
+}
+
+.p-drawer-plan__img {
+    width: 64px;
+    height: 64px;
+    margin-right: 14px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.p-drawer-plan__text {
+    font-size: 16px;
+    color: global.$color5;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    line-height: 24px;
+}

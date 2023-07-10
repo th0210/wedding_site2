@@ -1,0 +1,155 @@
+@use "../global" as global;
+
+.p-card {
+    background: global.$color4;
+    padding: 20px 23px 30px 23px;
+    position: relative;
+
+    @include global.mq(sp) {
+        padding: 20px 17px 25px 17px;
+    }
+
+    &::before {
+        content: "";
+        width: calc(100% - 26px);
+        height: calc(100% - 23px);
+        border: 1px solid global.$main-color2;
+        position: absolute;
+        top: 9px;
+        left: 13px;
+
+        @include global.mq(sp) {
+            width: calc(100% - 16px);
+            height: calc(100% - 20px);
+            top: 10px;
+            left: 8px;
+        }
+    }
+}
+
+.p-card__textarea {
+    padding: 0 6px;
+
+    @include global.mq(sp) {
+        width: 95%;
+        padding: 14px;
+        margin: -32px auto 0 auto;
+        background: rgb(255, 255, 255, 0.88);
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.p-card__mark {
+    position: absolute;
+    top: 27px;
+    right: 36px;
+    cursor: pointer;
+    z-index: 2;
+
+    @include global.mq(sp) {
+        top: 29px;
+        right: 25px;
+    }
+
+    &:active {
+        .c-heart-mark {
+            font-size: 0;
+
+            &::before {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.p-card__img {
+    height: 202px;
+    object-fit: cover;
+
+    @include global.mq(tb) {
+        height: auto;
+    }
+
+    @include global.mq(sp) {
+        height: 184px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.p-card__head {
+    font-size: 18px;
+    color: global.$color5;
+    font-family: global.$ff-noto;
+    font-weight: global.$fw-regular;
+    line-height: 27px;
+    margin-top: 16px;
+    padding: 0 6px;
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 0 6px 0;
+        margin-top: 0;
+        border-bottom: 1px solid global.$main-color1;
+    }
+}
+
+.p-card__area-box {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+
+    @include global.mq(sp) {
+        margin-top: 6px;
+    }
+}
+
+.p-card__area {
+    margin-left: 8px;
+    font-size: 12px;
+    color: global.$color5;
+    line-height: 18px;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+}
+
+.p-card__tags  {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13px;
+    row-gap: 4px;
+    column-gap: 8px;
+
+    @include global.mq(sp) {
+        margin-top: 6px;
+    }
+}
+
+.p-card__person {
+    margin-top: 28px;
+
+    @include global.mq(tb) {
+        margin-left: 9px;
+    }
+
+    @include global.mq(sp) {
+        margin-top: 16px;
+        margin-left: 9px;
+    }
+}
+
+.p-card__more {
+    display: flex;
+    justify-content: right;
+    margin-top: 27px;
+
+    @include global.mq(sp) {
+        margin-top: 16px;
+    }
+}

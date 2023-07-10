@@ -1,0 +1,9 @@
+@use "../global" as global;
+
+.l-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include global.mq(sp) {
+    }
+}

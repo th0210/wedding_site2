@@ -1,0 +1,17 @@
+@use "../global" as global; 
+
+.c-categories1 {
+    @include global.categories(12px, 18px, global.$tag-color3);
+
+    @include global.mq(sp) {
+        @include global.categories(10px, 15px, global.$tag-color3)
+    }
+
+    &.color2 {
+        @include global.categories(12px, 18px, global.$tag-color2);
+
+        @include global.mq(sp) {
+            @include global.categories(10px, 15px, global.$tag-color2)
+        }
+    }
+}

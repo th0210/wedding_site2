@@ -1,0 +1,21 @@
+@use "../global" as global;
+
+.p-footer-sns-icons {
+    display: flex;
+    gap: 19px;
+    justify-content: center;
+    margin-top: 8px;
+
+    @include global.mq(sp) {
+        gap: 8px;
+    }
+
+    i {
+        font-size: 20px;
+        color: global.$main-color1;
+
+        @include global.mq(sp) {
+            font-size: 16px;
+        }
+    }
+}

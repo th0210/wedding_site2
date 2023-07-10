@@ -1,0 +1,76 @@
+@use "../global" as global;
+
+.p-drawer-area {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: global.$drawer;
+    transition: 0.5s;
+
+    &.is-open {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.p-drawer-area__bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.p-drawer-area__content {
+    width: 750px;
+    height: 302px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: global.$color4;
+    border: 1px solid global.$main-color2;
+    z-index: global.$drawer-close;
+}
+
+.p-drawer-area__lists {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
+    column-gap: 64px;
+}
+
+.p-drawer-area__list {
+    cursor: pointer;
+    position: relative;
+}
+
+.p-drawer-area__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+
+.p-drawer-area__link {
+    width: 280px;
+    font-size: 16px;
+    line-height: 24px;
+    color: global.$color5;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    padding-bottom: 14px;
+    border-bottom: 1px solid global.$main-color2;
+    display: inline-block;
+}

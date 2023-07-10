@@ -1,0 +1,295 @@
+@use "../global" as global;
+
+.p-voice-review-card {
+    min-width: 1175px;
+    padding: 28px 16px 31px 27px;
+    background: global.$color4;
+    margin-top: 26px;
+    display: flex;
+    position: relative;
+
+    @include global.mq(sp) {
+        margin-top: 25px;
+        padding: 16px 12px;
+        min-width: 358px;
+        display: none;
+    }
+}
+
+.p-voice-review-card__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.p-voice-review-card__img {
+    @include global.mq(sp) {
+        width: 125px;
+        height: 144px;
+    }
+
+    img {
+        display: block;
+
+        @include global.mq(sp) {
+            width: 125px;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+
+.p-voice-review-card__content {
+    margin-left: 32px;
+
+    @include global.mq(sp) {
+        margin-left: 10px;
+    }
+}
+
+.p-voice-review-card-top {
+    display: flex;
+
+    @include global.mq(sp) {
+        display: block;
+    }
+}
+
+.p-voice-review-card-top__title {
+    font-size: 20px;
+    color: global.$color5;
+    font-family: global.$ff-noto;
+    font-weight: global.$fw-regular;
+    line-height: 30px;
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.p-voice-review-card-top__satisfaction {
+    display: flex;
+    align-items: center;
+
+    @include global.mq(sp) {
+        margin-top: 8px;
+    }
+}
+
+.p-voice-review-card-top__satisfaction__text {
+    font-size: 14px;
+    color: global.$main-color1;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    line-height: 21px; 
+
+    @include global.mq(sp) {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.p-voice-review-card-top__satisfaction__evaluation {
+    font-size: 24px;
+    color: global.$tag-color2;
+    margin-left: 8px;
+
+    @include global.mq(sp) {
+        font-size: 18px;
+        margin-left: 4px;
+    }
+
+    span {
+        color: #D9D9D9;
+    }
+}
+
+.p-voice-review-card-top__satisfaction__category {
+    display: none;
+
+    @include global.mq(sp) {
+        display: block;
+    }
+}
+
+.p-voice-review-card-top__person {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 82px;
+
+    @include global.mq(sp) {
+        margin-left: 0;
+    }
+}
+
+.p-voice-review-card-top__person__img {
+    width: 57px;
+    height: 57px;
+    position: relative;
+
+    &.sp {
+        @include global.mq(sp) {
+            margin-left: 12px;
+        }
+    }
+
+
+    &::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: global.$main-color2;
+        position: absolute;
+        top: -5px;
+        left: -12px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.p-voice-review-card-top__person__evaluation {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+
+    &.sp {
+        @include global.mq(sp) {
+            margin-left: 8px;
+        }
+    }
+
+    &.satisfaction {
+        margin-left: 0;
+    }
+}
+
+.p-voice-review-card-top__person__name {
+    font-size: 20px;
+    color: global.$color5;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    line-height: 30px; 
+    margin-left: 8px;
+    position: relative;
+
+    @include global.mq(sp) {
+        font-size: 14px;
+        line-height: 21px;
+        padding-bottom: 10px;
+    }
+
+    &::before {
+        content: "担当プランナー";
+        font-size: 12px;
+        color: global.$main-color1;
+        font-family: global.$ff-yu;
+        font-weight: global.$fw-medium;
+        display: inline-block;
+        line-height: 18px;
+        white-space: nowrap;
+        position: absolute;
+        top: -18px;
+        left: 0;
+    }
+}
+
+.p-voice-review-card-top__person__evaluation__mark {
+    font-size: 18px;
+    color: global.$tag-color2;
+
+    @include global.mq(sp) {
+        font-size: 14px;
+    }
+
+    span {
+        color: #D9D9D9;
+    }
+}
+
+.p-voice-review-card-top__person__evaluation__total {
+    font-size: 16px;
+    color: global.$color5;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    line-height: 24px; 
+    margin-left: 6px;
+
+    @include global.mq(sp) {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.p-voice-review-card-top__person__evaluation__number {
+    font-size: 12px;
+    color: global.$main-color1;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    line-height: 18px; 
+    margin-left: 6px;
+
+    @include global.mq(sp) {
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+
+.p-voice-review-card-under {
+    margin-top: 8px;
+}
+
+.p-voice-review-card-under__text {
+    font-size: 16px;
+    color: global.$color5;
+    font-family: global.$ff-yu;
+    font-weight: global.$fw-medium;
+    line-height: 24px;
+    padding-right: 68px;
+
+    @include global.mq(sp) {
+        font-size: 14px;
+        line-height: 21px;
+        padding-right: 29px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    
+        /*IE対策*/
+        line-height: 1.5em;
+        max-height: 4.5em;
+    }
+}
+
+.p-voice-review-card-under__person {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 8px;
+    
+    @include global.mq(sp) {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 0;
+        color: global.$color5;
+        text-align: right;
+        padding-right: 32px;
+    }
+}
+
+.p-voice-review-card-under__category {
+    margin-top: 10px;
+
+    @include global.mq(sp) {
+        display: none;
+    }
+}
+
+.p-voice-review-card__more {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}

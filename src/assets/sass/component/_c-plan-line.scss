@@ -1,0 +1,20 @@
+@use "../global" as global; 
+
+.c-plan-line {
+    width: 45px;
+    height: 6px;
+    display: inline-block;
+    border-bottom: 1px solid global.$main-color1;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 10px;
+        border-bottom: 1px solid global.$main-color1;
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        bottom: 2px;
+        transform: rotate(30deg);
+    }
+}
